@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-###A hash title
+<h3>A hash title</h3>
  - Name: Alexander "Perchema" Crustev
  - Born: 9th of June 2000
  - Location: Varna, Bulgaria
