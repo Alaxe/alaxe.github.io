@@ -9,7 +9,6 @@ information about me. Also I've wanted to have a place to share ideas with the
 Internet about things, I find interesting. And so I created this.
 
 ###Who am I ?
-
 I'm Alexander Crustev a.k.a "Perchema", a guy who loves computers and 
 programming. I have most experience in solving algorithmic problems (mainly in
 c++), developing video games (at least trying to), and creating web apps. I
@@ -17,14 +16,12 @@ like the idea of Open source, so I have put some of my projects (the newer
 ones) on [Github][gh-prof]. You can find out more on the [About][about] page.
 
 ###How's this website made ?
-
 Well, I said that I want to share interesting things with the Internet. The
 technologies I've used to create this are quite cool, allowing me to create
 this website **completely free**. Yes it has a few limitations, but they aren't
 a problem for the website I currently want.
 
 ####Github Pages
-
 [Github Pages][gh-pages] allows you to host static websites (i.e. without any
 server-side scripting like php, python, or node) for free. You can create an
 user/organisation website by creating a repo named *<user/organisation
@@ -33,7 +30,6 @@ is a personal website I'm using the first option. I am using Github Pages,
 because I find it more reliable than other free hosting services.
 
 ####Jekyll
-
 [Jekyll][jekyll] is a simle static site generator. You may have noticed when
 I've said, that Github Pages allows only static websites, but I have a blog,
 which isn't static. Well, Jekyll allows you to work with templates and markup
@@ -44,7 +40,6 @@ website in Github, you just upload the jekyll project to the corresponding
 repository and the folks at Github handle the static website for you).
 
 ####Dot.tk
-
 [Dot.tk][dot-tk] is a service, that provides free domains. Why are they free?
 There are some places in the world, which most people haven't ever heard of 
 (like Tokelau \*wink\*), but have their own country code domain name for some
@@ -55,7 +50,6 @@ know about your custom domain, add a *CNAME* file to the root of your repository
 with your desired domain name. (more info [here][gh-cname]).
 
 ###Conclusion
-
 If you have the skill, needed to create a website from scratch (HTML, CSS) and 
 want a simple solution, I recomemnd using [Github Pages][gh-pages]. It won't do
 if you want something more complex (e.g. registration / users) or if you want 

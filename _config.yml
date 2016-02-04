@@ -20,3 +20,10 @@ markdown: kramdown
 
 gems:
   - jekyll-gist
+
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
