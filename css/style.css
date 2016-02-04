@@ -1,26 +1,26 @@
 * {
-       font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif; 
 }
 
 body {
-        padding: 2% 15px 25px;
-        background-color: #fff;
-        text-color: #070707;
-        max-width: 500px;
-        margin: auto;
+    padding: 2% 15px 25px;
+    background-color: #fff;
+    text-color: #070707;
+    max-width: 620px;
+    margin: auto;
 }
 
 a {
-        text-decoration: none;
-        color: #777;
+    text-decoration: none;
+    color: #777;
 }
 a:hover, a:active {
-        color: #aaa;
+    color: #aaa;
 }
 
 h1 {
-        font-size: 25pt;
-        text-align: center;
+    font-size: 25pt;
+    text-align: center;
 }
 
 ul#nav {
@@ -41,3 +41,5 @@ hr {
     border-color: #FFFFFF;
     border-top-width: 0.25;
 }
+
+
