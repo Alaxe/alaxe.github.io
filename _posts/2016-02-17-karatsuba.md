@@ -7,13 +7,13 @@ When dealing with numbers, having hundreds of thousands of digits, we need to
 implement ourselves even basic arithmetic (e.g. addition or division). In this 
 post I'm going to explain Karatsuba's algorithm for multiplication.
 
-###What are long numbers ?
+### What are long numbers ?
 For those of you who haven't heard of *long numbers* or *BigInts*, I suggest 
 reading [this][stack_overflow_tutorial] tutorial on StackOverflow. A quick
 primer: To work with large figures, we split them into smaller parts (a la digits)
 and follow the rules we, humans, use to add, subtract, multiply, etc.
 
-####The basic algorithm for multiplication
+#### The basic algorithm for multiplication
 You apply the algorithm you are thought in grade school - you multiply the first
 number with every digit of the second one and sum the results. The complexity of 
 this algorithm is $$O(n^2)$$. [Read more][grade_school_wikipedia].
@@ -32,7 +32,7 @@ void grade_school(int64_t *a, int64_t *b, int64_t *ans, int32_t len) {
 }
 {% endhighlight %}
 
-####Optimizations
+#### Optimizations
  *  Use a bigger base -  $$10^8$$ reduces the digits 8 times and makes 
     the algorithm $$8^2 = 64$$ times faster. 
      *  Watch out for overflow - in the case of multiplying you need to fit the
@@ -47,12 +47,12 @@ void grade_school(int64_t *a, int64_t *b, int64_t *ans, int32_t len) {
         ans[i + j] -= q * BASE;
 {% endhighlight %}
 
-###Karatsuba
+### Karatsuba
 In 1960 Anatoly Karatsuba developed a *Divide and conquer* algorithm for 
 multiplication of numbers. The basic idea is to replace part of the
 multiplication with additions and subtractions. 
 
-####Maths
+#### Maths
 We want to multiply the numbers $$x$$ and $$y$$. For simplicity they're going to
 be both $$n$$ digits long in some base $$B$$. Let's pick some number of digits
 $$m$$, such that $$0 < m < n$$. Then we can split our numbers as:
@@ -72,7 +72,7 @@ $$z_1 = (x_1y_1 + x_1y_0 + x_0y_1 + x_0y_0) - (x_1y_1 + x_0y_0)$$
 $$z_1 = (x_1 + x_0)(y_1 + y_0) - x_1y_1 - x_0y_0$$  
 $$z_1 = (x_1 + x_0)(y_1 + y_0) - z_2 - z_0$$
 
-####The algorithm
+#### The algorithm
 To achieve best performance the numbers are split into halves -
 $$m = \lceil n / 2 \rceil$$. $$z_0, z_1, z_2$$ are calculated by using the 
 same algorithm, applied recursively. When the numbers become small enough, 
@@ -98,7 +98,7 @@ procedure karatsuba(x, y)
     return z2 * BASE ^ (2 * m) + z1 * BASE ^ m + z0
 {% endhighlight %}
 
-####Complexity
+#### Complexity
 At each step there are $$O(n)$$ operations performed for addition and 
 subtraction and the algorithm is called recursively 3 times, for numbers, half
 the length of the original ones. The number of elementary operations is:
@@ -110,7 +110,7 @@ algorithms (I won't explain it here, it's a big topic in its own right), we can
 calculate the complexity of Karatsuba's algorithm as 
 $$O(n^{log_2{3}}) \approx O(n^{1.585})$$.
 
-###Implementation
+### Implementation
 Karatsuba doesn't improve the simple grade school algorithm that much, due to 
 the overhead, added for recursion. To have it run fast, one needs an efficient 
 implementation. There were 2 main optimizations, that've sped up my code:
@@ -134,17 +134,17 @@ implementation. There were 2 main optimizations, that've sped up my code:
     * $$2m$$ digits for $$z_1$$
     * $$2n$$ digits for lower recursion
 
-####Testing
+#### Testing
 After you've implemented Karatsuba, I highly recommend uploading your code to an
 online judge. SPOJ has 2 version of this problem with different constraints -
 [MUL][SPOJ_mul] and [VFMUL][SPOJ_vfmul]. Having it tested makes sure you have
 learned and implemented the algorithm correctly.
 
-####My code
+#### My code
 You can find my source as a [gist][my_code]. It runs for 1.06 sec on
 [VFMUL][SPOJ_vfmul], but it can probably be optimized further.
 
-###Further reading
+### Further reading
 I should mention that Karatsuba's algorithm isn't the fastest way to multiply
 long numbers. If you're interested you can read more about the more efficient 
 [Schönhage–Strassen algorithm][wikipedia_mult_fft], which uses 
