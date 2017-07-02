@@ -52,7 +52,7 @@ In 1960 Anatoly Karatsuba developed a *Divide and conquer* algorithm for
 multiplication of numbers. The basic idea is to replace part of the
 multiplication with additions and subtractions. 
 
-#### Maths
+#### Math
 We want to multiply the numbers $$x$$ and $$y$$. For simplicity they're going to
 be both $$n$$ digits long in some base $$B$$. Let's pick some number of digits
 $$m$$, such that $$0 < m < n$$. Then we can split our numbers as:
