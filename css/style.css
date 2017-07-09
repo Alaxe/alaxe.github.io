@@ -1,47 +1,17 @@
-body {
-    font-family: 'Roboto', sans-serif; 
-
-    padding: 2% 15px 25px;
-    background-color: #fff;
-    text-color: #070707;
-    max-width: 620px;
-    margin: auto;
+.base-container {
+    max-width: 800px;
+    margin:auto;
+    margin-top:20px;
 }
 
+.page-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.post-meta {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
 a {
-    text-decoration: none;
-    color: #777;
+    text-decoration: none;  
 }
-a:hover, a:active {
-    color: #aaa;
-}
-
-h1 {
-    font-size: 25pt;
-    text-align: center;
-}
-
-ul#nav {
-    padding: 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #aaa;
-
-    text-align: center;
-}
-
-ul#nav li {
-    display: inline;
-    padding: 0px 20px;
-    font-size: 15pt;
-}
-
-hr {
-    border-color: #FFFFFF;
-    border-top-width: 0.25;
-}
-
-code, pre {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
-}
-

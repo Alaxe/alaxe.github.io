@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body>
-    {% include header.html %}
+    {% include head.html %}
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-<script
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-type="text/javascript"></script>
-  </body>
+            <main class="mdl-layout__content">
+                <div class="base-container">
+                {{ content }}
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
