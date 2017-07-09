@@ -33,19 +33,12 @@ void grade_school(int64_t *a, int64_t *b, int64_t *ans, int32_t len) {
 {% endhighlight %}
 
 #### Optimizations
- *  Use a bigger base -  $$10^8$$ reduces the digits 8 times and makes 
-    the algorithm $$8^2 = 64$$ times faster. 
-     *  Watch out for overflow - in the case of multiplying you need to fit the
-        square of your base in the data type you're using.
-     *  Use powers of 10 to avoid problems with I/O
- *  Modulo and division are slower operations than addition and multiplication, 
-    so doing less of the is better. Here's an optimized version of the carrying:
+Use a bigger base -  $$10^8$$ reduces the number of digits 8 times and makes
+the algorithm $$8^2 = 64$$ times faster.
 
-{% highlight c++ %}
-        int64_t q = ans[i + j] / BASE; //using BASE instead of 10 
-        ans[i + j + 1] += q; 
-        ans[i + j] -= q * BASE;
-{% endhighlight %}
+  * Watch out for overflow - in the case of multiplying you need to fit the
+    square of your base in the data type you're using.
+  * Use powers of 10 to avoid problems with I/O
 
 ### Karatsuba
 In 1960 Anatoly Karatsuba developed a *Divide and conquer* algorithm for 
@@ -84,7 +77,7 @@ procedure karatsuba(x, y)
         return x * y
 
     maxLen = max(len(x), len(y))
-    m = ceil(m / 2)
+    m = ceil(maxLen / 2)
 
     /* split the digit sequences about the middle */
     x1, x0 = split_at(x, m)
