@@ -15,3 +15,15 @@
 a {
     text-decoration: none;  
 }
+pre {
+    overflow-x: auto;
+}
+
+.blog-excerpt .footnotes {
+    display: none;
+}
+
+.blog-excerpt sup .footnote {
+    color; #FF0;
+    display: none;
+}
