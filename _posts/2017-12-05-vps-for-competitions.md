@@ -74,11 +74,11 @@ lightweight, and a (few) high performance VPSs for the *workers* or the services
 which do the computationally intensive testing.
 While it's simpler to setup only a single worker VPS, it's really easy to clone
 VPSs so it is not a big deal to use more.
-This would with the benefit of allowing me to add workers quickly during the
+This would come with the benefit of allowing me to add workers quickly during the
 competiton in case I needed more than I had anticipated.
 
 These VPSs would still need to communicate with each other.
-Fortunately both DigitalOcean and Linode offer a local network for your virtual
+Fortunately, both DigitalOcean and Linode offer a local network for your virtual
 servers, which doesn't count against your transfer quotas.
 I would still need to use secure passwords though, as this network isn't
 private - it's open to all VPSs in the datacenter.
@@ -91,8 +91,8 @@ results.
 
 ### Conclusion
 Running an informatics competition requires a lot of computing power.
-Instead of buying a expensive hardware, you could rent VPSs for little to
-nothing and achive the same (if not better) results.
+Instead of buying an expensive hardware, you could rent VPSs for little to
+nothing and achieve the same (if not better) results.
 While you are free to use any software, I would choose CMS at it's reliable and
 well suited for this multi-machine setup.
 
