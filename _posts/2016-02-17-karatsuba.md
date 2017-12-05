@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Karatsuba's algorithm"
+title: "Karatsuba's Algorithm"
 author: Perchema
 ---
 When dealing with numbers, having hundreds of thousands of digits, we need to
 implement ourselves even basic arithmetic (e.g. addition or division). In this 
 post I'm going to explain Karatsuba's algorithm for multiplication.
 
-### What are long numbers ?
+### What are Long Numbers ?
 For those of you who haven't heard of *long numbers* or *BigInts*, I suggest 
 reading [this][stack_overflow_tutorial] tutorial on StackOverflow. A quick
 primer: To work with large figures, we split them into smaller parts (a la digits)
 and follow the rules we, humans, use to add, subtract, multiply, etc.
 
-#### The basic algorithm for multiplication
+#### The Basic Algorithm for Multiplication
 You apply the algorithm you are thought in grade school - you multiply the first
 number with every digit of the second one and sum the results. The complexity of 
 this algorithm is $$O(n^2)$$. [Read more][grade_school_wikipedia].
@@ -65,7 +65,7 @@ $$z_1 = (x_1y_1 + x_1y_0 + x_0y_1 + x_0y_0) - (x_1y_1 + x_0y_0)$$
 $$z_1 = (x_1 + x_0)(y_1 + y_0) - x_1y_1 - x_0y_0$$  
 $$z_1 = (x_1 + x_0)(y_1 + y_0) - z_2 - z_0$$
 
-#### The algorithm
+#### The Algorithm
 To achieve best performance the numbers are split into halves -
 $$m = \lceil n / 2 \rceil$$. $$z_0, z_1, z_2$$ are calculated by using the 
 same algorithm, applied recursively. When the numbers become small enough, 

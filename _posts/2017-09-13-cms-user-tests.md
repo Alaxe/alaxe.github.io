@@ -2,12 +2,19 @@
 layout: post
 title: "Disabling CMS User Tests"
 author: Perchema
+excerpt: |
+    Last month I was preparing a lecture on interactive informatics tasks and wanted
+    to set up some example problems in [CMS][cms].
+    One of the task types I wanted to showcase was [two steps][cms-two-steps].
+
+    [cms]: http://cms-dev.github.io/
+    [cms-two-steps]: https://cms.readthedocs.io/en/v1.3/Task%20types.html#twosteps
 ---
 Last month I was preparing a lecture on interactive informatics tasks and wanted
 to set up some example problems in [CMS][cms].
 One of the task types I wanted to showcase was [two steps][cms-two-steps][^1].
 
-### The problem
+### The Problem
 At the time of writing CMS doesn't fully support this task type.
 One feature of CMS is user tests - contestants can run their sollution on a
 specific input under the constest environment.
@@ -21,7 +28,7 @@ So, I wanted to disable user tests for the two steps problem.
 The only issue is that you can disable them for the whole contest but not for
 specific tasks.
 
-### The sollution
+### The Sollution
 In CMS you can limit the number of user tests per task per user.
 If I could set this limit to zero, then nobody could send user tests.
 This stops them from hanging the worker and breaking the system for everyone.
