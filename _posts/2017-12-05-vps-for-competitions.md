@@ -91,7 +91,7 @@ results.
 
 ### Conclusion
 Running an informatics competition requires a lot of computing power.
-Instead of buying an expensive hardware, you could rent VPSs for little to
+Instead of buying expensive hardware, you could rent VPSs for little to
 nothing and achieve the same (if not better) results.
 While you are free to use any software, I would choose CMS at it's reliable and
 well suited for this multi-machine setup.
