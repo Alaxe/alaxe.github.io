@@ -12,7 +12,7 @@ description: >
   Alexander "Perchema" Crustev's website. A place where you can find 
   information about his projects and things he finds interesting.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://perchema.tk" # the base hostname & protocol for your site
+url: "https://perchema.xyz" # the base hostname & protocol for your site
 permalink: "/:title/"
 
 # Build settings
