@@ -6,24 +6,5 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Perchema
-email: aleks.trc@gmail.com
-description: > 
-  Alexander "Perchema" Crustev's website. A place where you can find 
-  information about his projects and things he finds interesting.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://perchema.xyz" # the base hostname & protocol for your site
-permalink: "/:title/"
-
-# Build settings
-markdown: kramdown
-
-gems:
-  - jekyll-gist
-
-lsi: false
-safe: true
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
+# themee
+remote_theme: Alaxe/xyz-jekyll-theme
