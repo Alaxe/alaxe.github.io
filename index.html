@@ -1,30 +1,308 @@
----
-layout: default
----
-{% for post in site.posts|limit:5 %}
-
-<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp blog-excerpt">
-    <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">
-            <a href="{{ post.url }}">
-                {{ post.title }}
-            </a>
-        </h2>
-    </div>
-    <div class="mdl-card__supporting-text post-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-            {{ post.date | date: "%-d %b, %Y" }}
-        </time>
-    </div>
-    <div class="mdl-card__supporting-text">
-        {{ post.excerpt | markdownify | replace_regex: '\[\^[0-9]+\]' ''}}
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-js-button
-        mdl-js-ripple-effect mdl-button--accent "
-                href="{{ post.url }}">
-            read more
-        </a>
-    </div>
-</div>
-{% endfor %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aleksandar Krastev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<style>
+.card-equal-height {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.card-equal-height .card-footer {
+   margin-top: auto;
+}
+</style>
+  </head>
+  <body>
+    <section class="hero is-info">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1">
+            Aleksandar Krastev
+          </h1>
+          <h2 class="subtitle">
+            Computer Science student at MIT
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8">
+            <div class="message is-dark">
+              <div class="message-header">
+                <h2>
+                  About
+                </h2>
+              </div>
+              <div class="message-body">
+                <div class="content">
+                  <p>
+                    I started programming in 2011 by going to national algorithmic
+                    contests in Bulgaria.
+                    I have competed at
+                    <a href="http://stats.ioinformatics.org/people/5853">
+                      International Olympiad in Informatics</a>
+                    and occasionally do
+                    <a href="http://codeforces.com/profile/perchema">Codeforces</a>
+                    as well.
+                  </p>
+                  <p>
+                    In my free time I like tinkering with Linux and
+                    listening to podcasts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="message is-info">
+              <div class="message-header">
+                <h2>
+                  Contact
+                </h2>
+              </div>
+              <div class="message-body">
+                <div class="buttons">
+                  <a class="button is-fullwidth is-info is-outlined"
+                     href="mailto:alexalex@mit.edu"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                      alexalex@mit.edu
+                    </span>
+                  </a>
+                  <a class="button is-fullwidth is-info is-outlined"
+                     href="https://github.com/Alaxe/"
+                  >
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>
+                      github.com/Alaxe
+                    </span>
+                  </a>
+                  <a class="button is-fullwidth is-info is-outlined"
+                     href="./resume/resume.pdf">
+                    <span class="icon">
+                      <i class="fas fa-business-time"></i>
+                    </span>
+                    <span>
+                      Résumé
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="title is-1">
+          Projects
+        </h1>
+        <div class="columns is-multiline">
+          <div class="column is-3">
+            <div class="card card-equal-height">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./images/nitwit.png" alt="Primality testing in Nitwit">
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">
+                  Nitwit
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <p>
+                    A compiler for a made-up programming language.
+                    Nitwit is imperative, stongly typed, garbage collected, and uses
+                    prefix notation for amusement purposes.
+                  </p>
+                  <div class="tags">
+                    <span class="tag is-link">C++</span>
+                    <span class="tag is-dark">Makefile</span>
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="https://github.com/Alaxe/nitwit">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>
+                      Code
+                    </span>
+                  </a>
+                </p>
+                <p class="card-footer-item">
+                  <a href="https://github.com/Alaxe/nitwit/blob/master/docs/spec.md">
+                    <span class="icon">
+                      <i class="fas fa-book"></i>
+                    </span>
+                    <span>
+                      Docs
+                    </span>
+                  </a>
+                </p>
+              </footer>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card card-equal-height">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./images/gemini.png" alt="Screenshot of Gemini">
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">
+                  Gemini
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <p>
+                    A co-op platformer where two players solve puzzles,
+                    made out of logic gates, in order to traverse the level.
+                    Friends play together by sharing a unique room code.
+                  </p>
+                  <div class="tags">
+                    <span class="tag is-warning">JavaScript</span>
+                    <span class="tag is-warning">PhaserJS</span>
+                    <span class="tag is-warning">NodeJS</span>
+                    <span class="tag is-dark">WebSockets</span>
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="https://github.com/Alaxe/gemini">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>
+                      Code
+                    </span>
+                  </a>
+                </p>
+                <p class="card-footer-item">
+                  <a href="http://gemini.alexalex.xyz">
+                    <span class="icon">
+                      <i class="fas fa-gamepad"></i>
+                    </span>
+                    <span>
+                      Play
+                    </span>
+                  </a>
+                </p>
+              </footer>
+            </div>
+          </div>
+          
+          <div class="column is-3">
+            <div class="card card-equal-height">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./images/stealth.png" alt="Screenshot of Stealth">
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">
+                  Stealth
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <p>
+                    A top-down 2D game where the player has to steal coins,
+                    while avoiding the guards.
+                    The areas visible to the enemies are determined using a
+                    custom <em>O</em>(<em>N</em>log(<em>N</em>)) algorithm.
+                  </p>
+                  <div class="tags">
+                    <span class="tag is-warning">JavaScript</span>
+                    <span class="tag is-warning">PhaserJS</span>
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="https://github.com/Alaxe/stealth">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>
+                      Code
+                    </span>
+                  </a>
+                </p>
+                <p class="card-footer-item">
+                  <a href="https://alexalex.xyz/stealth">
+                    <span class="icon">
+                      <i class="fas fa-gamepad"></i>
+                    </span>
+                    <span>
+                      Play
+                    </span>
+                  </a>
+                </p>
+              </footer>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card card-equal-height">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./images/judgesystem.png"
+                       alt="Screenshot of JudgeSystem">
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">
+                  JudgeSystem
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <p>
+                    A website where users can test their solutions to
+                    algorithmic tasks on predetermined test cases.
+                    It has advanced problem configuration options, parallelized
+                    testing, an account system, and a blog. 
+                  </p>
+                  <div class="tags">
+                    <span class="tag is-info">Python</span>
+                    <span class="tag is-info">Django</span>
+                    <span class="tag is-dark">HTML/CSS</span>
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="https://github.com/Alaxe/judgesystem">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>
+                      Code
+                    </span>
+                  </a>
+                </p>
+              </footer>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
