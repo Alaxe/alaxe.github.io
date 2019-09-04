@@ -17,12 +17,15 @@
 
 \newcommand{\code}[1]{\texttt{#1}}
 \newcommand{\noskip}{\vspace{-\parskip}}
+%\newcommand{\noskip}{}
+\newcommand{\doskip}{\vspace{\parskip}}
+
 
 \setmainlanguage{english}
 
 \setlength{\parindent}{0em}
-\setlength{\parskip}{0.5em}
-\titlespacing{\section}{0pt}{0pt}{0em}
+\setlength{\parskip}{.5em}
+\titlespacing{\section}{0pt}{1em}{0em}
 \titleformat{\section}{\bf\Large}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 \setlist{nosep}
 
@@ -38,21 +41,17 @@
 \begin{document}
 
 \centerline{{\Huge \bf Aleksandar Krastev}}
-\section*{Contact}
-\noskip
-\begin{multicols}{2}
-\begin{itemize}
-    \item \href{mailto:alexalex@mit.edu}{alexalex@mit.edu}
-    \item \href{https://github.com/Alaxe}{https://github.com/Alaxe}
-    \item 123-456-7890
-    \item \href{https://alexalex.xyz}{https://alexalex.xyz}
-\end{itemize}
-\end{multicols}
+%\noskip
+$\bullet$ \href{mailto:alexalex@mit.edu}{alexalex@mit.edu} \hfill
+$\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
+$\bullet$ 123-456-7890 \hfill
+$\bullet$ \href{https://alexalex.xyz}{https://alexalex.xyz}
+
 \noskip
 \section*{Education}
 \textbf{Massachusetts Institute of Technology}
 \hfill
-\textsc{Sep 2019 - Expected Jun 2023}
+\textsc{Expected Jun 2023}
 
 \noskip
 \begin{itemize}
@@ -62,31 +61,40 @@
 \end{itemize}
 
 \section*{Skills}
-\textbf{Software:} C++ (100k+ lines), Python (Django), Javascript
-    (PhaserJS, NodeJS), Java, C\#, HTML, CSS, Linux, Git\\*
+\textbf{Programming:} C++ (100k+ lines), Python (Django), Javascript
+    (PhaserJS, NodeJS), Java, C\#\\*
+\textbf{Software:} Linux, Git, LaTeX, HTML, CSS, Nginx\\*
 \textbf{Languages:} Fluent in English and Bulgarian, beginner in German
 
 \section*{Projects}
-\textbf{Nitwit:} A C++ compiler a made up programming language\\*
+\textbf{Nitwit:} A C++ compiler for a made-up programming language\\*
 \textbf{Gemini:} A co-op puzzle platformer implemented in JavaScript\\*
 \textbf{Stealth:} A top-down 2D game implemented in JavaScript\\*
-\textbf{Judge System:} A Django system for automated testing of solutions to algorithmic problems
+\textbf{Judge System:} A Python/Django website for testing of solutions
+to algorithmic tasks.
 
 \section*{Awards}
 \textbf{Gold Medals:}
 \noskip
 \begin{itemize}
-    \item International Olympiad of Informatics 2018
-    \item Balkan Olympiad of Informatics 2018
-    \item Romanian Masters of Informatics 2018
+    \item International Olympiad in Informatics, Tsukuba, Japan
+        \hfill \textsc{Sep 2018}
+    \item Balkan Olympiad in Informatics, Timișoara, Romania
+        \hfill \textsc{Jul 2018}
+    \item Romanian Masters of Informatics, Bucharest, Romania
+        \hfill \textsc{Oct 2018}
 \end{itemize}
 
+\doskip
 \textbf{Silver Medals:}
 \noskip
 \begin{itemize}
-    \item European Physics Olympiad 2019
-    \item International Olympiad of Informatics 2019
-    \item International Olympiad of Informatics 2016
+    \item International Olympiad in Informatics, Baku, Azerbaijan
+        \hfill \textsc{Jul 2019}
+    \item European Physics Olympiad, Riga, Latvia
+        \hfill \textsc{Jun 2019}
+    \item International Olympiad in Informatics, Kazan, Russia
+        \hfill \textsc{Aug 2016}
 \end{itemize}
 
 \section*{Experience}
@@ -98,6 +106,8 @@
     \item Prepared and presented three lectures on data structures and algorithms topics to 20 high school students.
     \item Prepared practice tasks to complement the discussed material.
 \end{itemize}
+
+\doskip
 \textbf{Softuni / C\# Basics Instructor}
 \hfill
 \textsc{Jan 2017 - Apr 2017, Varna, Bulgaria}
