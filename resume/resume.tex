@@ -25,7 +25,7 @@
 
 \setlength{\parindent}{0em}
 \setlength{\parskip}{.5em}
-\titlespacing{\section}{0pt}{1em}{0em}
+\titlespacing{\section}{0pt}{.5em}{0em}
 \titleformat{\section}{\bf\Large}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 \setlist{nosep}
 
@@ -39,13 +39,18 @@
 \date{2019-09-03}
 
 \begin{document}
+\setlength{\belowdisplayskip}{\parskip}
+\setlength{\belowdisplayshortskip}{\belowdisplayskip}
+\setlength{\abovedisplayskip}{\parskip}
+\setlength{\abovedisplayshortskip}{\abovedisplayskip}
+
 
 \centerline{{\Huge \bf Aleksandar Krastev}}
 %\noskip
 $\bullet$ \href{mailto:alexalex@mit.edu}{alexalex@mit.edu} \hfill
+$\bullet$ \href{https://alexalex.xyz}{https://alexalex.xyz} \hfill
 $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
-$\bullet$ 857-320-5722 \hfill
-$\bullet$ \href{https://alexalex.xyz}{https://alexalex.xyz}
+%$\bullet$ 857-320-5722 \hfill
 
 \noskip
 \section*{Education}
@@ -55,23 +60,55 @@ $\bullet$ \href{https://alexalex.xyz}{https://alexalex.xyz}
 
 \noskip
 \begin{itemize}
-    \item Pursuing a B.S. in Computer Science
-    \item Current courses: Computational Structures and Introduction to Machine
-        Learning
+    \item Pursuing a B.S. in Computer Science and Engineering
+    \item Relevant coursework:
+        Algorithm for Graphs and Matrices,
+        Computational Structures,
+        Introduction to Machine Learning,
+        and Probability and Random Variables
 \end{itemize}
 
 \section*{Skills}
-\textbf{Programming:} C++ (100k+ lines), Python (Django), Javascript
-    (PhaserJS, NodeJS), Java, C\#\\*
-\textbf{Software:} Linux, Git, LaTeX, HTML, CSS, Nginx\\*
+\textbf{Software:} C++, Python, JavaScript, Linux, LaTeX, Git, HTML\\*
 \textbf{Languages:} Fluent in English and Bulgarian, beginner in German
 
-\section*{Projects}
-\textbf{Nitwit:} A C++ compiler for a made-up programming language\\*
-\textbf{Gemini:} A co-op puzzle platformer implemented in JavaScript\\*
-\textbf{Stealth:} A top-down 2D game implemented in JavaScript\\*
-\textbf{Judge System:} A Python/Django website for testing of solutions
-to algorithmic tasks
+\section*{Experience}
+\textbf{QuantCo / Software Engineering Intern}
+\hfill
+\textsc{Jun 2020 - Present}%Aug 2020}
+\noskip
+\begin{itemize}
+    \item Developing a Python wrapper for the R grf package using rpy2.
+\end{itemize}
+
+\textbf{MIT CSAIL / Undergraduate Researcher}
+\hfill
+\textsc{Feb 2020 - Present}%Aug 2020}
+\noskip
+\begin{itemize}
+    \item Researched applications for a hardware stream merger.
+    \item Implemented and evaluated two merger applications by running hardware
+        simulations.
+\end{itemize}
+
+\textbf{Bulgarian Informatics Contests / Problem Author}
+\hfill
+\textsc{Nov 2019}
+\noskip
+\begin{itemize}
+    \item Developed a task for a contest with 75+ participants from 7
+        countries.
+\end{itemize}
+
+\textbf{Bulgarian Informatics Camps / Instructor}
+\hfill
+\textsc{Aug 2017 - Jun 2019}
+\noskip
+\begin{itemize}
+    \item Prepared and presented three lectures on data structures and
+        algorithms topics in front of 20 high school students.
+    \item Prepared practice tasks to complement the discussed material.
+\end{itemize}
 
 \section*{Awards}
 \textbf{Gold Medals:}
@@ -85,7 +122,7 @@ to algorithmic tasks
         \hfill \textsc{Oct 2018}
 \end{itemize}
 
-\doskip
+%\doskip
 \textbf{Silver Medals:}
 \noskip
 \begin{itemize}
@@ -97,23 +134,12 @@ to algorithmic tasks
         \hfill \textsc{Aug 2016}
 \end{itemize}
 
-\section*{Experience}
-\textbf{National Informatics Camps / Instructor}
-\hfill
-\textsc{Aug 2017 - Jun 2019, Bulgaria}
-\noskip
-\begin{itemize}
-    \item Prepared and presented three lectures on data structures and algorithms topics to 20 high school students.
-    \item Prepared practice tasks to complement the discussed material.
-\end{itemize}
+\section*{Projects}
+\textbf{Nitwit:} A C++ compiler for a made-up programming language\\*
+\textbf{Gemini:} A co-op puzzle platformer implemented in JavaScript\\*
+\textbf{Stealth:} A top-down 2D game implemented in JavaScript\\*
+\textbf{Judge System:} A Python/Django website for testing of solutions
+to algorithmic tasks
 
-\doskip
-\textbf{Softuni / C\# Basics Instructor}
-\hfill
-\textsc{Jan 2017 - Apr 2017, Varna, Bulgaria}
-\noskip
-\begin{itemize}
-    \item Taught an introductory C\# course to 40  students of various ages.
-    \item Completed twelve four-hour lectures.
-\end{itemize}
+
 \end{document}
