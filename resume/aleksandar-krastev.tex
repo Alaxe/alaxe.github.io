@@ -1,13 +1,13 @@
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage[letterpaper, left=1in, right=1in, bottom=1in, top=1in]{geometry}
+
 \usepackage{amsmath}
 \usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{polyglossia}
 \usepackage{titlesec}
 \usepackage{multicol}
-
+\usepackage{mathtools} % for ceiling and floor
+\usepackage{hyperref}
 
 \usepackage[]{noto}
 \setmainfont[
@@ -17,26 +17,22 @@
 
 \newcommand{\code}[1]{\texttt{#1}}
 \newcommand{\noskip}{\vspace{-\parskip}}
-%\newcommand{\noskip}{}
 \newcommand{\doskip}{\vspace{\parskip}}
-
-
-\setmainlanguage{english}
 
 \setlength{\parindent}{0em}
 \setlength{\parskip}{.5em}
-\titlespacing{\section}{0pt}{.5em}{0em}
+\titlespacing{\section}{0pt}{0em}{0em}
 \titleformat{\section}{\bf\Large}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
-\setlist{nosep}
+\setlist{nosep, topsep=-\parskip}
 
-\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemi}{\textbullet}
 \renewcommand{\labelitemii}{$\circ$}
 \renewcommand{\thesection}{}
 
 \pagenumbering{gobble}
 
 \author{Aleksandar Krastev}
-\date{2019-09-03}
+\date{2020-12-21}
 
 \begin{document}
 \setlength{\belowdisplayskip}{\parskip}
@@ -45,20 +41,18 @@
 \setlength{\abovedisplayshortskip}{\abovedisplayskip}
 
 
+
 \centerline{{\Huge \bf Aleksandar Krastev}}
-%\noskip
 $\bullet$ \href{mailto:alexalex@mit.edu}{alexalex@mit.edu} \hfill
 $\bullet$ \href{https://alexalex.xyz}{https://alexalex.xyz} \hfill
 $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
 %$\bullet$ 857-320-5722 \hfill
 
-\noskip
 \section*{Education}
 \textbf{Massachusetts Institute of Technology}
 \hfill
 \textsc{Expected Jun 2023}
 
-\noskip
 \begin{itemize}
     \item Pursuing a B.S. in Computer Science and Engineering
         \hfill GPA 5.0/5.0
@@ -82,7 +76,6 @@ $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
 \textbf{QuantCo / Software Engineering Intern}
 \hfill
 \textsc{Jun 2020 - Aug 2020}
-\noskip
 \begin{itemize}
     \item Developed and tested a Python wrapper for
         \href{https://grf-labs.github.io/}{R Generalized Random Forests} using
@@ -93,17 +86,16 @@ $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
 \textbf{MIT CSAIL / Undergraduate Researcher}
 \hfill
 \textsc{Feb 2020 - Aug 2020}
-\noskip
 \begin{itemize}
     \item Researched applications for a hardware stream merger
     \item Implemented and evaluated two C++ applications by running hardware
         simulations
 \end{itemize}
 
+\section*{Service}
 \textbf{Bulgarian Informatics / Instructor \& Problem Author}
 \hfill
 \textsc{Aug 2017 - Present}
-\noskip
 \begin{itemize}
     \item Developed two tasks for contests with 75+ participants from up to 7
         countries
@@ -113,7 +105,6 @@ $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
 
 \section*{High School Olympiads}
 \textbf{Gold Medals}
-\noskip
 \begin{itemize}
     \item International Olympiad in Informatics, Tsukuba, Japan
         \hfill \textsc{Sep 2018}
@@ -123,9 +114,7 @@ $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
         \hfill \textsc{Oct 2018}
 \end{itemize}
 
-%\doskip
 \textbf{Silver Medals}
-\noskip
 \begin{itemize}
     \item International Olympiad in Informatics, Baku, Azerbaijan
         \hfill \textsc{Jul 2019}
