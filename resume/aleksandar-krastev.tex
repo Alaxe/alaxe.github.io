@@ -24,6 +24,7 @@
 \titlespacing{\section}{0pt}{0em}{0em}
 \titleformat{\section}{\bf\Large}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 \setlist{nosep, topsep=-\parskip}
+\setlist[description]{leftmargin=!}
 
 \renewcommand{\labelitemi}{\textbullet}
 \renewcommand{\labelitemii}{$\circ$}
@@ -46,7 +47,6 @@
 $\bullet$ \href{mailto:alexalex@mit.edu}{alexalex@mit.edu} \hfill
 $\bullet$ \href{https://alexalex.xyz}{https://alexalex.xyz} \hfill
 $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
-%$\bullet$ 857-320-5722 \hfill
 
 \section*{Education}
 \textbf{Massachusetts Institute of Technology}
@@ -57,89 +57,92 @@ $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
     \item Pursuing a B.S. in Computer Science and Engineering
         \hfill GPA 5.0/5.0
     \item Past courses:
-        Software Construction,
-        Theory of Computation,
-        Algorithms for Graphs and Matrices,
-        Introduction to Machine Learning,
-        Probability and Random Variables
-    \item Current:
         Computer System Architecture,
+        Advanced Data Structures,
         Distributed Systems,
-        Advanced Data Structures
+        Theory of Computation,
+        Software Construction,
+        Algorithms for Graphs and Matrices
 \end{itemize}
 
-\section*{Skills}
-\begin{description}
-    \item[Software] C++, Python, Java, Go, JavaScript, RISC-V asm, Linux, LaTeX, Git,
-        HTML, make
-    \item[Languages] English, Bulgarian, beginner German
-\end{description}
 
-\section*{Experience}
+
+\section*{Work Experience}
+\textbf{Amazon.com / Software Development Engineering Intern}
+\hfill
+\textsc{Jun 2021--Aug 2021}
+\begin{itemize}
+    \item Improved the Amazon Halo mobile app using React Native.
+\end{itemize}
+
 \textbf{QuantCo / Software Engineering Intern}
 \hfill
 \textsc{Jun 2020--Aug 2020}
 \begin{itemize}
-    \item Developed and tested a Python wrapper for
-        \href{https://grf-labs.github.io/}{R Generalized Random Forests} using
+    \item Migrated \href{https://grf-labs.github.io/}{Random Forests} model
+        training and validation from R to Python using
         \href{https://rpy2.github.io/}{rpy2}.
-    \item Migrated model training and validation from R to Python.
 \end{itemize}
 
-\textbf{MIT CSAIL / Undergraduate Researcher}
+\section*{Publications}
+\begin{description}[style=nextline]
+\item[F1: A Fast and Programmable Accelerator for Fully Homomorphic
+    Encryption]
+    Nikola Samardzic, Axel Feldmann, \textbf{Aleksandar Krastev}, Srinivas Devadas,
+    Ronald Dreslinski, Christopher Peikert, Daniel Sanchez, \textit{in Proceedings of the
+    54th annual IEEE/ACM international symposium on Microarchitecture (MICRO-54),
+    October 2021 (to appear)}
+\end{description}
+
+\section*{Research Projects}
+\textbf{Hardware Accelerator for Fully Homomorphic Encryption}
 \hfill
-\textsc{Feb 2020--Present}
+\textsc{Jan 2021--Present}
 \begin{itemize}
-    \item Optimizing HDL implementations of Numerical Theoretic Transform
-        functional units for use in an accelerator for Fully Homomorphic
-        Encryption.
-    \item Researched applications for a hardware stream merger. Evaluated BFS
-        and triangle counting by implementing them in C++ and running hardware
-        simulations.
+    \item Came up with a novel design for a hardware matrix-transpose unit.
+    \item Optimized the HDL implementations of other functional units.
+\end{itemize}
+\textbf{Applications for a Hardware Stream Merger}
+\hfill
+\textsc{Feb 2020--Aug 2020}
+\begin{itemize}
+    \item Implemented and evaluated BFS and triangle counting by running
+        hardware simulations.
 \end{itemize}
 
-\section*{Leadership}
-\textbf{Bulgarian Informatics / Instructor \& Problem Author}
+\textbf{Informatics Problem Author}
 \hfill
-\textsc{Aug 2017--Aug 2020}
+\textsc{Aug 2019--Present}
 \begin{itemize}
-    \item Developed two tasks for contests with 75+ participants from up to 7
+    \item Developed two tasks for Bulgarian contests with 75+ participants from up to 7
         countries.
-    \item Prepared and presented three lectures on topics in data structures and
-        algorithms in front of the top 20 Bulgarian high school students.
 \end{itemize}
 
 \section*{High School Olympiads}
-\textbf{Gold Medals}
-\begin{itemize}
-    \item International Olympiad in Informatics, Tsukuba, Japan
-        \hfill \textsc{Sep 2018}
-    \item Balkan Olympiad in Informatics, Timișoara, Romania
-        \hfill \textsc{Jul 2018}
-    \item Romanian Masters of Informatics, Bucharest, Romania
-        \hfill \textsc{Oct 2018}
-\end{itemize}
-
-\textbf{Silver Medals}
-\begin{itemize}
-    \item International Olympiad in Informatics, Baku, Azerbaijan
-        \hfill \textsc{Jul 2019}
-    \item European Physics Olympiad, Riga, Latvia
-        \hfill \textsc{Jun 2019}
-    \item International Olympiad in Informatics, Kazan, Russia
-        \hfill \textsc{Aug 2016}
-\end{itemize}
+\begin{description}[labelwidth=19em]
+    \item[International Olympiad in Informatics] Gold (2018), Silver (2016,
+        2019)
+    \item[Balkan Olympiad in Informatics] Gold (2018), Silver (2016)
+    \item[European Physics Olympiad] Silver (2019)
+\end{description}
 
 \section*{Independent Projects}
-\begin{description}
+\begin{description}[labelwidth=4em]
     \item[\href{https://github.com/Alaxe/nitwit}{Nitwit}]
-        Compiler for a made-up programming language implemented in C++
+        Compiler for a made-up programming language (C++)
+    \item[\href{https://github.com/6851-2021/retroactive-priority-queue}{retropq}]
+        Priority queue that supports changing past operations in $O(\log n)$
+        (Python)
     \item[\href{https://github.com/Alaxe/gemini}{Gemini}]
-        Co-op puzzle platformer implemented in JavaScript
+        Co-op puzzle platformer (JavaScript)
     \item[\href{https://github.com/Alaxe/stealth}{Stealth}]
-        Top-down 2D game implemented in JavaScript
-    \item[\href{https://github.com/Alaxe/judgeSystem}{Judge System}]
-        Python/Django website for testing of solutions to algorithmic tasks
+        Top-down 2D game implemented (JavaScript)
+\end{description}
+
+\section*{Skills}
+\begin{description}
+    \item[Software] C++, Python, Java, Go, JavaScript, TypeScript, RISC-V asm, Linux, LaTeX, Git
+    \item[Languages] English, Bulgarian, beginner German
 \end{description}
 
 \end{document}
