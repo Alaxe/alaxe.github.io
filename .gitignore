@@ -1,3 +1,8 @@
-resume/aleksandar-krastev.out
-resume/aleksandar-krastev.log
-resume/aleksandar-krastev.aux
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+resume/*.aux
+resume/*.log
+resume/*.out
