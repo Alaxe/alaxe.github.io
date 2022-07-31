@@ -1,0 +1,127 @@
+- number: "6.888"
+  name: Secure Hardware Design
+  semester: Spring 2022
+  type: advanced_cs
+- number: "6.823"
+  name: Computer System Architecture AAGS
+  semester: Spring 2021
+  type: advanced_cs
+- number: "6.824"
+  name: Distributed Systems AAGS
+  semester: Spring 2021
+  type: advanced_cs
+- number: "6.851"
+  name: Advanced Data Structures AAGS
+  semester: Spring 2021
+  type: advanced_cs
+- number: "6.840"
+  name: Theory of Computation AAGS
+  semester: Fall 2020
+  type: advanced_cs
+- number: "6.890"
+  name: Algorithms for Graphs and Matrices AAGS
+  semester: Spring 2020
+  type: advanced_cs
+
+- number: "6.033"
+  name: Computer Systems Engineering
+  semester: Spring 2022
+  type: cs
+- number: "6.UAR"
+  name: Seminar in Undergraduate Advanced Research
+  semester: Fall 2021, Spring 2022
+  type: cs
+- number: "6.002"
+  name: Circuits and Electronics
+  semester: Fall 2021
+  type: cs
+- number: "6.02"
+  name: Introduction to EECS via Communication Networks
+  semester: Fall 2021
+  type: cs
+- number: "6.031"
+  name: Software Construction
+  semester: Fall 2020
+  type: cs
+- number: "6.009"
+  name: Fundamentals of Programming
+  semester: Spring 2020
+  type: cs
+- number: "6.004"
+  name: Computational Structures
+  semester: Fall 2019
+  type: cs
+- number: "6.036"
+  name: Introduction to Machine Learning
+  semester: Fall 2019
+  type: cs
+
+- number: "21M.051"
+  name: Fundamentals of Music
+  semester: Spring 2022
+  type: hass
+- number: "24.211"
+  name: Theory of Knowledge
+  semester: Fall 2021
+  type: hass
+- number: "24.118"
+  name: Paradox and Infinity
+  semester: Spring 2021
+  type: hass
+- number: "21M.600"
+  name: Introduction to Acting
+  semester: Spring 2021
+  type: hass
+- number: "14.02"
+  name: Principles of Macroeconomics
+  semester: Fall 2020
+  type: hass
+- number: "14.01"
+  name: Principles of Microeconomics
+  semester: Spring 2020
+  type: hass
+
+- number: "24.900"
+  name: Introduction to Linguistics
+  semester: Spring 2020
+
+- number: "24.00"
+  name: Problems in Philosophy
+  semester: Fall 2019
+
+- number: "6.0001"
+  name: Introduction to Computer Science
+  semester: ASE
+
+- number: "18.600"
+  name: Probability and Random Variables
+  semester: Spring 2020
+  type: science
+- number: "7.012"
+  name: Introductory Biology
+  semester: Fall 2020
+  type: science
+- number: "3.091"
+  name: Introduction to Solid-State Chemistry
+  semester: Fall 2019
+  type: science
+- number: "8.01"
+  name: Classical Mechanics
+  semester: ASE
+  type: science
+- number: "8.02"
+  name: Electricity and Magnetism
+  semester: ASE
+  type: science
+- number: "18.01"
+  name: Single Variable Calculus
+  semester: ASE
+  type: science
+- number: "18.02"
+  name: Multi Variable Calculus
+  semester: ASE
+  type: science
+- number: "18.03"
+  name: Differential Equations
+  semester: ASE
+  type: science
