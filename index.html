@@ -6,7 +6,7 @@ layout: default
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alexalex</title>
+    <title>alexalex</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <link
       rel="stylesheet"
@@ -23,25 +23,19 @@ layout: default
           Alex<sup>2</sup>
         </h1>
         <span>
-          <a href="#">
-             <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            Github
-          </a> |
-          <a href="#">
-            <span class="icon">
-              <i class="fas fa-envelope"></i>
-            </span>
-            alexalex@mit.edu
-          </a>
-          |
-          <a href="#">
-            <span class="icon">
-              <i class="fas fa-business-time"></i>
-            </span>
-            Resume
-          </a>
+          {% include gh
+            text="Github"
+            href="https://github.com/Alaxe"
+          %} |
+          {% include ilink
+            icon="envelope"
+            text="alexalex@mit.edu"
+            href="mailto:alexalex@mit.edu"
+          %} |
+          {% include ilink
+            icon="business-time"
+            text="Resume"
+          %}
         </span>
       </hgroup>
 

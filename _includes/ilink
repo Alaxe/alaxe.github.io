@@ -1,0 +1,9 @@
+<a href="{{ include.href | default: "#" }}">
+  <span class="icon">
+    <i class="
+      fa-{{ include.icon_type | default: "solid"}}
+      fa-{{ include.icon }}
+    "></i>
+    {{ include.text }}
+  </span>
+</a>
