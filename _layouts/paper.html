@@ -1,0 +1,31 @@
+<details>
+  <summary role="button" class="secondary">
+    {{ page.title }}
+  </summary>
+  <hgroup>
+    <h5> {{ page.full_title }} </h5>
+    <h6>
+      {% for a in page.authors %}
+        {% assign a_name = a %}
+        {% assign sep = ',' %}
+
+        {% if a == "Aleksandar Krastev" %}
+          {% capture a_name %}<strong>{{ a }}</strong>{% endcapture %}
+        {% endif %}
+
+        {% if forloop.last %}
+          {% assign sep = '' %}
+        {% endif %}
+
+        {{ a_name }}{{ sep }}
+      {% endfor %}
+    </h6>
+  </hgroup>
+  {{ page.content }}
+  <footer>
+    <a href="#">
+      <i class="fa-solid fa-file-pdf"></i>
+      Paper
+    </a>
+  </footer>
+</details>
