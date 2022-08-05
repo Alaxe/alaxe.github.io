@@ -3,7 +3,7 @@ layout: side_project
 code: https://github.com/Alaxe/vali-li
 title: "vali.li"
 extra_links:
-  Website:
+  - text: Website
     icon: cloud-sun
     href: https://vali.li
 ---

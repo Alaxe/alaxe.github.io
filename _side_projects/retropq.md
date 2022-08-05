@@ -3,7 +3,7 @@ layout: side_project
 title: "Retroactive Priority Queue"
 code: https://github.com/6851-2021/retroactive-priority-queue
 extra_links:
-  "Original Paper":
+  - text: Original Paper
     icon: file-pdf
     href: http://erikdemaine.org/papers/Retroactive_TALG/paper.pdf
 ---

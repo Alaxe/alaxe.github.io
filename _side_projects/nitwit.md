@@ -2,7 +2,7 @@
 layout: side_project
 code: https://github.com/Alaxe/nitwit
 extra_links:
-  Docs:
+  - text: Docs
     icon: book
     href: https://github.com/Alaxe/nitwit/blob/master/docs/spec.md
 ---

@@ -1,47 +1,29 @@
 ---
 layout: default
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>alexalex</title>
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
-  </head>
-  <body class="container">
-    <main>
-      <section>
-      <hgroup>
-        <h1>
-          Alex<sup>2</sup>
-        </h1>
-        <span>
-          {% include gh
-            text="Github"
-            href="https://github.com/Alaxe"
-          %} |
-          {% include ilink
-            icon="envelope"
-            text="alexalex@mit.edu"
-            href="mailto:alexalex@mit.edu"
-          %} |
-          {% include ilink
-            icon="business-time"
-            text="Resume"
-          %}
-        </span>
-      </hgroup>
+<hgroup>
+  <h1>
+    Alex<sup>2</sup>
+  </h1>
+  <span>
+    {% include gh
+      text="Github"
+      href="https://github.com/Alaxe"
+    %} |
+    {% include ilink
+      icon="envelope"
+      text="alexalex@mit.edu"
+      href="mailto:alexalex@mit.edu"
+    %} |
+    {% include ilink
+      icon="business-time"
+      text="Resume"
+      href="/resume/aleksandar-krastev.pdf"
+    %}
+  </span>
+</hgroup>
 
-      {% for section in site.main_sections %}
-        {{ section.output }}
+{% for section in site.main_sections %}
+  {{ section.output }}
 
-      {% endfor %}
-  </body>
-</html>
+{% endfor %}

@@ -2,7 +2,7 @@
 layout: side_project
 code: https://github.com/Alaxe/stealth
 extra_links:
-  Play:
+  - text: Play
     icon: gamepad
     href: https://alexalex.xyz/stealth
 ---

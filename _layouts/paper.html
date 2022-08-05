@@ -22,10 +22,13 @@ layout: main_toggle
 </hgroup>
 {{ content }}
 <footer>
-  <a href="#">
-    <i class="fa-solid fa-file-pdf"></i>
-    Paper
-  </a>
+  {% include ilink href=page.pdf icon="file-pdf" text="Paper" %}
+
+  {% for l in page.extra_links %}
+    |
+    {% include ilink href=l.href icon=l.icon text=l.text icon_type=l.icon_type %}
+  {% endfor %}
+
   {% if page.equal_contribution %}
     <small style="float: right;">
       *Equal contribution

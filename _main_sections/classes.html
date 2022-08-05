@@ -17,10 +17,6 @@ title: Classes I've Taken
       </thead>
       <tbody>
         {% for cl in cat.classes %}
-          {% if cl.semester == "ASE" %}
-            {% assign sem_tooltip="data-tooltip=\"Advanced Standing Exam\"" %}
-          {% endif %}
-
           <tr>
             <td>{{ cl.number }}</td>
             <td>{{ cl.name }}</td>

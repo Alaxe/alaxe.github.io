@@ -6,8 +6,6 @@ layout: main_toggle
   {% include gh href=page.code %}
   {% for l in page.extra_links %}
     |
-    {% assign k=l[0] %}
-    {% assign v=l[1] %}
-    {% include ilink href=v.href icon=v.icon text=k icon_type=v.icon_type %}
+    {% include ilink href=l.href icon=l.icon text=l.text icon_type=l.icon_type %}
   {% endfor %}
 </footer>
