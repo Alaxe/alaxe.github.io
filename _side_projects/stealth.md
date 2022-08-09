@@ -6,7 +6,6 @@ extra_links:
     icon: gamepad
     href: https://alexalex.xyz/stealth
 ---
-A top-down 2D game in which the player has to collect coins and avoid
-guards. The areas the enemies can see are determined using a custom O(N log(N))
-algorithm.
+A top-down 2D game where you collect coins while avoiding guards on patrol.
+The algorithm for determining what area each guard can see is pretty fun.
 

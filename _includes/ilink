@@ -4,6 +4,6 @@
       fa-{{ include.icon_type | default: "solid"}}
       fa-{{ include.icon }}
     "></i>
-    {{ include.text }}
   </span>
+  {{ include.text }}
 </a>

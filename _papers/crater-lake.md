@@ -17,9 +17,11 @@ authors:
   - Chris Peikert
   - Daniel Sanchez
 ---
-CraterLake is the state of the art hardware accelerator for computation on
-encrypted data.
-It achieves speedups of XXX over a CPU and 10x over F1.
+CraterLake is the state of the art hardware accelerator for FHE,
+with speedups of 5,000× over a CPU on a broad range of FHE applications.
+It builds upon F1's functional units, while contributing a novel architecture
+that significantly reduces on- and off-chip data movement.
 
-I came up with the way computation is distributed across the chip (Sec ??),
-designed the on-chip network, and designed the KeySwitchHint generation unit.
+I came up with the way computation is distributed across the chip (Sec. 4),
+designed the on-chip network (Sec. 5.3), and designed the KeySwitch hint
+generator (Sec. 5.2).
