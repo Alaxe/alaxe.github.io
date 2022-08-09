@@ -3,9 +3,5 @@ layout: main_toggle
 ---
   {{ content }}
 <footer>
-  {% include gh href=page.code %}
-  {% for l in page.extra_links %}
-    |
-    {% include ilink href=l.href icon=l.icon text=l.text icon_type=l.icon_type %}
-  {% endfor %}
+  {% include links links=page.links %}
 </footer>

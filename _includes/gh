@@ -1,7 +1,0 @@
-{% capture text %}{{ include.text | default: 'Code' }}{% endcapture %}
-{% include ilink
-  href=include.href
-  text=text
-  icon="github"
-  icon_type="brands"
-%}

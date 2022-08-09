@@ -1,25 +1,22 @@
 ---
 layout: default
+links:
+  - text: Github
+    icon: github
+    href: https://github.com/Alaxe
+  - text: alexalex@mit.edu
+    icon: envelope
+    href: mailto:alexalex@mit.edu
+  - text: Resume
+    icon: business-time
+    href: /resume/aleksandar-krastev.pdf
 ---
 <hgroup>
   <h1>
     Alex<sup>2</sup>
   </h1>
   <span>
-    {% include gh
-      text="Github"
-      href="https://github.com/Alaxe"
-    %} |
-    {% include ilink
-      icon="envelope"
-      text="alexalex@mit.edu"
-      href="mailto:alexalex@mit.edu"
-    %} |
-    {% include ilink
-      icon="business-time"
-      text="Resume"
-      href="/resume/aleksandar-krastev.pdf"
-    %}
+    {% include links links=page.links %}
   </span>
 </hgroup>
 

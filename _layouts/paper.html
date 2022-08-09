@@ -22,12 +22,7 @@ layout: main_toggle
 </hgroup>
 {{ content }}
 <footer>
-  {% include ilink href=page.pdf icon="file-pdf" text="Paper" %}
-
-  {% for l in page.extra_links %}
-    |
-    {% include ilink href=l.href icon=l.icon text=l.text icon_type=l.icon_type %}
-  {% endfor %}
+  {% include links links=page.links %}
 
   {% if page.equal_contribution %}
     <small style="float: right;">
