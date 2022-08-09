@@ -10,7 +10,7 @@ decrypting it.
 Outside of architecture, I'm curious about systems more in general (e.g.,
 distributed system and compilers) and in data structures.
 
-I'm been advised by [Prof. Daniel Sanchez][daniel] and I'm working closely with
+I'm been advised by Prof. [Daniel Sanchez][daniel] and I'm working closely with
 [Nikola Samardzic][nikola].
 
 
