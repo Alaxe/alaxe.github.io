@@ -1,0 +1,16 @@
+{% case include.icon %}
+  {% when "github" %}
+    {% assign icon_type = "brands" %}
+  {% else %}
+    {% assign icon_type = "solid" %}
+{% endcase %}
+
+<a href="{{ include.href | default: "#" }}">
+  <span class="icon">
+    <i class="
+      fa-{{ icon_type }}
+      fa-{{ include.icon }}
+    "></i>
+  </span>
+  {{ include.text }}
+</a>

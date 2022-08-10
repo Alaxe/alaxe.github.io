@@ -1,0 +1,32 @@
+---
+layout: main_toggle
+---
+<hgroup>
+  <h5> {{ page.full_title }} </h5>
+  <h6>
+    {% for a in page.authors %}
+      {% assign a_name = a %}
+      {% assign sep = ',' %}
+
+      {% if a == "Aleksandar Krastev" %}
+        {% capture a_name %}<strong>{{ a }}</strong>{% endcapture %}
+      {% endif %}
+
+      {% if forloop.last %}
+        {% assign sep = '' %}
+      {% endif %}
+
+      {{ a_name }}{{ sep }}
+    {% endfor %}
+  </h6>
+</hgroup>
+{{ content }}
+<footer>
+  {% include links links=page.links %}
+
+  {% if page.equal_contribution %}
+    <small style="float: right;">
+      *Equal contribution
+    </small>
+  {% endif %}
+</footer>
