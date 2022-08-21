@@ -29,18 +29,7 @@ author_name: "Aleksandar Krastev"
 collections:
   papers:
   side_projects:
-    order:
-      - nitwit.md
-      - retropq.md
-      - stealth.md
-      - gemini.md
-      - vali-li.md
   main_sections:
-    order:
-      - about.md
-      - research.md
-      - side-projects.md
-      - classes.md
 
 
 # Exclude from processing.

@@ -1,5 +1,6 @@
 ---
 layout: side_project
+title: Stealth
 links:
   - text: Code
     icon: github
@@ -9,5 +10,5 @@ links:
     href: https://alexalex.xyz/stealth
 ---
 A top-down 2D game where you collect coins while avoiding guards on patrol.
-The algorithm for determining what area each guard can see is pretty fun.
+I enjoyed coming up with the algorithm for determining the area each guard sees.
 
