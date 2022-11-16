@@ -1,5 +1,8 @@
 - category: "Advanced Computer Science"
   classes:
+  - number: "6.1810"
+    name: Operating System Engineering
+    semester: "Fall 2022"
   - number: "6.888"
     name: Secure Hardware Design
     semester: Spring 2022

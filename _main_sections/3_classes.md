@@ -1,6 +1,7 @@
 ---
 layout: main_section
 title: Classes I've Taken
+now: Fall 2022
 ---
 {% for cat in site.data.classes %}
   <details>
@@ -23,6 +24,8 @@ title: Classes I've Taken
             <td>
               {% if cl.semester == "ASE" %}
                 <span data-tooltip="Advanced Standing Exam">ASE</span>
+              {% elsif cl.semester == page.now %}
+                <em>{{ cl.semester }}</em>
               {% else %}
                 {{ cl.semester }}
               {% endif %}

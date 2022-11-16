@@ -8,4 +8,4 @@ links:
 ---
 A two-player platformer where players progress by cooperatively solving puzzles
 made out of logic gates.
-Supports real-time multiplier using WebSockets.
+Implements real-time multiplier using WebSockets.
