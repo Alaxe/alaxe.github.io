@@ -4,10 +4,10 @@
 
 \usepackage{enumitem}
 \usepackage{titlesec}
-\usepackage{multicol}
 \usepackage{hyperref}
 
 \usepackage{noto}
+\usepackage[T1]{fontenc}
 \setmainfont[BoldFont={Noto Serif Medium}]{Noto Serif Light}
 
 
@@ -15,7 +15,7 @@
 \setlength{\parskip}{.5em}
 \titlespacing{\section}{0pt}{0em}{0em}
 \titleformat{\section}{\bf\Large}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
-\setlist{nosep, topsep=-\parskip}
+\setlist{nosep, topsep=-0.4em}
 \setlist[description]{leftmargin=!}
 
 \renewcommand{\labelitemi}{\textbullet}
@@ -45,7 +45,7 @@ $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
 
 \begin{itemize}
     \item Pursuing M.Eng. and B.S. in Computer Science
-        \hfill GPA 5.0/5.0
+        \hfill \textsc{GPA 5.0/5.0}
     \item Past courses:
         Computer System Architecture,
         Secure Hardware Design,
@@ -58,12 +58,28 @@ $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
 
 
 
-\section*{Work Experience}
+\section*{Experience}
+\textbf{MIT / Graduate Research Assistant}
+\hfill
+\textsc{Jun 2022--Present}
+\begin{itemize}
+    \item Co-lead the development of an efficient, easy-to use FHE compiler
+        (\emph{under submission}).
+\end{itemize}
+
+\textbf{MIT / Undergraduate Researcher}
+\hfill
+\textsc{Jan 2021--May 2022}
+\begin{itemize}
+    \item Helped design the state-of-the-art FHE hardware accelerators
+        (\emph{CraterLake} and \emph{F1}).
+\end{itemize}
+
 \textbf{Amazon.com / Software Development Engineering Intern}
 \hfill
 \textsc{Jun 2021--Aug 2021}
 \begin{itemize}
-    \item Improved the Amazon Halo mobile app using React Native.
+    \item Worked on the Amazon Halo mobile using React Native and TypeScript.
 \end{itemize}
 
 \textbf{QuantCo / Software Engineering Intern}
@@ -75,39 +91,48 @@ $\bullet$ \href{https://github.com/Alaxe}{https://github.com/Alaxe} \hfill
         \href{https://rpy2.github.io/}{rpy2}.
 \end{itemize}
 
+\textbf{Bulgarian Informatics / Instructor \& Problem Author}
+\hfill
+\textsc{Aug 2017 - Jul 2020}
+\begin{itemize}
+    \item Developed 2 tasks for contests with 75+ participants from 7 countries.
+    \item Prepared 3 lectures on data structures and algorithms for Bulgaria's
+        top 20 students.
+\end{itemize}
+
 \section*{Publications}
 \begin{description}[style=sameline]
 \item[CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on
-    Encrypted Data] N.Samardzic, A. Feldmann, \textbf{A. Krastev}, N. Manohar, N. Genise, S.
+    Encrypted Data.] N.Samardzic, A. Feldmann, \textbf{A. Krastev}, N. Manohar, N. Genise, S.
     Devadas, K. Eldefrawy, C. Peikert, D. Sanchez, \textit{49th International
     Symposium in Computer Architecture (ISCA-48), June 2022}
 \item[F1: A Fast and Programmable Accelerator for Fully Homomorphic
-    Encryption]
+    Encryption.]
     A. Feldmann, N. Samardzic, \textbf{A. Krastev}, S. Devadas, R. Dreslinski,
     C. Peikert, D. Sanchez, \textit{54th annual IEEE/ACM international
-    symposium on Microarchitecture (MICRO-54), October 2021}
+    symposium on Microarchitecture (MICRO-54), October 2021}\\
     \textbf{(IEEE Micro's Top Pick for 2022)}
 \end{description}
 
 \section*{Independent Projects}
-\begin{description}[labelwidth=4em]
+\begin{description}[labelwidth=3.75em]
     \item[\href{https://github.com/Alaxe/nitwit}{Nitwit}]
         Compiler for a made-up programming language (C++)
     \item[\href{https://github.com/6851-2021/retroactive-priority-queue}{retropq}]
-        Priority queue that supports changing past operations in $O(\log n)$
+        Priority queue that can change past operations in $O(\log n)$
         (Python)
     \item[\href{https://github.com/Alaxe/gemini}{Gemini}]
-        Co-op puzzle platformer (JavaScript)
+        Co-op puzzle platformer with real-time multiplayer (JavaScript)
     \item[\href{https://github.com/Alaxe/stealth}{Stealth}]
-        Top-down 2D game (JavaScript)
+        2D game of sneaking past guards; computes visibility polygon in $O(n \log n)$
+        (JavaScript)
 \end{description}
 
 \section*{Awards}
-\begin{description}[labelwidth=19em]
-    \item[International Olympiad in Informatics] Gold (2018), Silver (2016,
-        2019)
-    \item[Balkan Olympiad in Informatics] Gold (2018), Silver (2016)
-    \item[European Physics Olympiad] Silver (2019)
+\begin{description}[labelwidth=6em]
+    \item[Gold medal] (24th of 351) at the International Olympiad in
+        Informatics,
+        2018
+    \item[Silver medal] (29th of 150) at the European Physics Olympiad, 2019
 \end{description}
-
 \end{document}
