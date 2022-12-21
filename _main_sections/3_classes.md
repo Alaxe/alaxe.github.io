@@ -1,7 +1,7 @@
 ---
 layout: main_section
 title: Classes I've Taken
-now: Fall 2022
+now: Spring 2023
 ---
 {% for cat in site.data.classes %}
   <details>
