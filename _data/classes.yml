@@ -1,8 +1,11 @@
 - category: "Advanced Computer Science"
   classes:
+  - number: "6.5120"
+    name: Formal Reasoning About Programs
+    semester: Spring 2023
   - number: "6.1810"
     name: Operating System Engineering
-    semester: "Fall 2022"
+    semester: Fall 2022
   - number: "6.888"
     name: Secure Hardware Design
     semester: Spring 2022
@@ -50,7 +53,6 @@
   - number: "6.0001"
     name: Introduction to Computer Science
     semester: ASE
-
 - category: "Humanities, Arts, and Social Sciences"
   classes:
   - number: "21M.051"
@@ -79,6 +81,9 @@
     semester: Fall 2019
 - category: "Math and Science"
   classes:
+  - number: "18.703"
+    name: Modern Algebra
+    semester: Spring 2023
   - number: "7.012"
     name: Introductory Biology
     semester: Fall 2020
