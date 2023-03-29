@@ -13,15 +13,15 @@ now: Spring 2023
         <tr>
           <th>#</th>
           <th>Name</th>
-          <th>Semester</th>
+          <th>Term</th>
         </tr>
       </thead>
       <tbody>
         {% for cl in cat.classes %}
           <tr>
-            <td style="width: 7em">{{ cl.number }}</td>
+            <td class="course">{{ cl.number }}</td>
             <td>{{ cl.name }}</td>
-            <td style="width: 8em">
+            <td class="course">
               {% if cl.semester == "ASE" %}
                 <span data-tooltip="Advanced Standing Exam">ASE</span>
               {% elsif cl.semester == page.now %}
