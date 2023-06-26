@@ -19,7 +19,14 @@ now: Summer 2023
       <tbody>
         {% for cl in cat.classes %}
           <tr>
-            <td class="course">{{ cl.number }}</td>
+            <td class="course">
+              {{ cl.number }}
+              {% if cl.old_number %}
+                <sub>
+                  [{{ cl.old_number }}]
+                </sub>
+              {% endif %}
+            </td>
             <td>{{ cl.name }}</td>
             <td class="course">
               {% if cl.semester == "ASE" %}

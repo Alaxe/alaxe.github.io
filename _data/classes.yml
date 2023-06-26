@@ -1,56 +1,72 @@
 - category: "Advanced Computer Science"
   classes:
   - number: "6.5120"
+    old_number: "6.822"
     name: Formal Reasoning About Programs
     semester: Spring 2023
   - number: "6.1810"
+    old_number: "6.039"
     name: Operating System Engineering
     semester: Fall 2022
-  - number: "6.888"
+  - number: "6.S983"
+    old_number: "6.888"
     name: Secure Hardware Design
     semester: Spring 2022
-  - number: "6.823"
+  - number: "6.5900"
+    old_number: "6.823"
     name: Computer System Architecture
     semester: Spring 2021
-  - number: "6.824"
+  - number: "6.5840"
+    old_number: "6.824"
     name: Distributed Systems
     semester: Spring 2021
-  - number: "6.851"
+  - number: "6.5230"
+    old_number: "6.851"
     name: Advanced Data Structures
     semester: Spring 2021
-  - number: "6.840"
+  - number: "6.5400"
+    old_number: "6.840"
     name: Theory of Computation
     semester: Fall 2020
-  - number: "6.890"
-    name: Algorithms for Graphs and Matrices
+  - number: "6.5350"
+    old_number: "6.890"
+    name: Matrix Multiplication and Graph Algorithms
     semester: Spring 2020
 - category: "Base Computer Science"
   classes:
-  - number: "6.033"
+  - number: "6.1810"
+    old_number: "6.033"
     name: Computer Systems Engineering
     semester: Spring 2022
   - number: "6.UAR"
     name: Seminar in Undergraduate Advanced Research
     semester: "Fall 2021<br>Spring 2022"
-  - number: "6.002"
+  - number: "6.2000"
+    old_number: "6.002"
     name: Circuits and Electronics
     semester: Fall 2021
-  - number: "6.02"
+  - number: "6.3400"
+    old_number: "6.02"
     name: Introduction to EECS via Communication Networks
     semester: Fall 2021
-  - number: "6.031"
-    name: Software Construction
+  - number: "6.1020"
+    old_number: "6.031"
+    name: Elements of Software Construction
     semester: Fall 2020
-  - number: "6.009"
+  - number: "6.1010"
+    old_number: "6.009"
     name: Fundamentals of Programming
     semester: Spring 2020
-  - number: "6.004"
+  - number: "6.1910"
+    old_number: "6.004"
     name: Computational Structures
     semester: Fall 2019
-  - number: "6.036"
+  - number: "6.3900"
+    old_number: "6.036"
     name: Introduction to Machine Learning
     semester: Fall 2019
-  - number: "6.0001"
+  - number: "6.100A"
+    old_number: "6.0001"
     name: Introduction to Computer Science
     semester: ASE
 - category: "Humanities, Arts, and Social Sciences"

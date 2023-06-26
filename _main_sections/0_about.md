@@ -6,7 +6,8 @@ layout: main_section
 I'm a PhD student at MIT working with Prof. [Daniel Sanchez][daniel].
 
 Some of my _current_ interests include [podcasts], [tinkering with
-Linux][linux], and, yes, Taylor Swift.
+Linux][linux], and, yes,
+<span title="Is it chill that you're in my head?">Taylor Swift</span>.
 
 [daniel]: https://people.csail.mit.edu/sanchez/
 [podcasts]: /podcasts
