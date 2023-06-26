@@ -9,6 +9,6 @@ links:
     icon: gamepad
     href: https://alexalex.xyz/stealth
 ---
-A top-down 2D game where you collect coins while avoiding beeing seen by guards.
-The area each guard sees (their *visibility polygon*) is comptuted in *O(n* log *n)*.
+A top-down 2D game where you collect coins while avoiding guards on patrol.
+The area each guard sees (their _visibility polygon_) is computed in _O(n_ log _n)_.
 

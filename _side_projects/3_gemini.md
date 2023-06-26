@@ -6,6 +6,6 @@ links:
     icon: github
     href: https://github.com/Alaxe/gemini
 ---
-A two-player platformer where players progress by cooperatively solving puzzles
-made out of logic gates.
-Implements real-time multiplier using WebSockets.
+A two-player platformer where players cooperatively solve puzzles made out of
+logic gates.
+Provides real-time multiplier using WebSockets.

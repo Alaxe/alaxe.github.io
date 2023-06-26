@@ -9,10 +9,10 @@ links:
     icon: file-pdf
     href: http://erikdemaine.org/papers/Retroactive_TALG/paper.pdf
 ---
-A partially *retroactive* priority queue supports adding and removing updates
-(here, `insert` and `delete_min`) on past versions of the data structure.
-Retroactive differs from persistent in that the effects of changing past
-operations propagate to the present (like in *Back to the Future*).
+A priority queue that supports adding and removing updates (`insert` and
+`delete_min`) on past versions of the data structure.
+Retroactivity differs from persistence in that the effects of changing past
+operations propagate to the present (think, _Back to the Future_).
 I implemented the data structure proposed by Demaine, Iacono, and Langerman,
-which performs all operations in *logarithmic* time.
+which performs all operations in _logarithmic_ time.
 
