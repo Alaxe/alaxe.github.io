@@ -3,7 +3,7 @@ skip_title: true
 layout: main_section
 ---
 **Hello There!**
-I'm a PhD student at MIT working with Prof. [Daniel Sanchez][daniel].
+I'm a PhD student at MIT working with Professor [Daniel Sanchez][daniel].
 
 Some of my _current_ interests include [podcasts], [tinkering with
 Linux][linux], and, yes,
