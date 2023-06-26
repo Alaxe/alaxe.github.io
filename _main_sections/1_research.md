@@ -2,24 +2,20 @@
 title: Research
 layout: main_section
 ---
-I'm interested in computer architecture research where I can apply
-techniques from classical algorithms and data structure.
-In particular, I'm interested in specialized hardware and hardware-software
-co-design, as these subfields target the fundamental problem of maximizing
-computation efficiency, without being limited by existing architectures.
-I'm also curious about applying similar techniques outside of architecture more
-broadly, for example in compilers or distributed systems.
+I want to do research in computer architecture where I apply techniques from
+classical algorithms and data structures.
+I'm not yet quite sure what this entails, but it will probably have something to
+do with accelerators, compilers, and/or hardware-software co-design.
+Ideally, I would be able to focus on maximizing efficiency, free from the
+limitations of existing architectures.
 
-So far, my research has focused on accelerating Fully Homomorphic
-Encryption---encryption that allows running programs on secret data without
-decrypting it.
-I'm advised by Prof. [Daniel Sanchez][daniel] and have worked closely with
-[Nikola Samardzic][nikola].
+During my undergrad, I collaborated closely with [Nikola Samardzic][nikola] on
+accelerating Fully Homomorphic Encryption---encryption that allows running
+programs on secret data without decrypting it.
 
 {% assign papers = site.papers | sort: "date" | reverse %}
 {% for paper in papers %}
   {{ paper.output }}
 {% endfor %}
 
-[daniel]: https://people.csail.mit.edu/sanchez/
 [nikola]: https://n-samar.github.io/
