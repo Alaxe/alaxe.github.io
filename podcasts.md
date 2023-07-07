@@ -38,7 +38,7 @@ podcasts:
 # Podcasts I Like
 
 {% for c in page.podcasts %}
-  {{ c.name }}:
+  **{{ c.name }}**
   <ul>
   {% for p in c.shows %}
     <li><a href="{{ p.href }}">{{ p.name }}</a></li>
