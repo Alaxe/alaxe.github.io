@@ -34,6 +34,18 @@ podcasts:
       href: https://99percentinvisible.org/
     - name: The Anthropocene Reviewed
       href: https://www.wnycstudios.org/podcasts/anthropocene-reviewed
+  - name: Limited Run
+    shows:
+    - name: Playing for Fun
+      href: https://www.relay.fm/playingforfun
+    - name: Ben, Ben, and Blue
+      href: https://www.stitcher.com/show/ben-ben-and-blue
+    - name: The 3b1b podcast
+      href: https://www.3blue1brown.com/podcast
+    - name: Neutral
+      href: https://neutral.fm/
+
+
 ---
 # Podcasts I Like
 
