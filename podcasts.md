@@ -22,30 +22,30 @@ podcasts:
     shows:
     - name: Cortex
       href: https://www.relay.fm/cortex
-    - name: The Backmarkers
-      href: https://www.relay.fm/backmarkers
-    - name: Two Headed Girl
-      href: https://twoheadedgirl.transistor.fm/
     - name: Robot or Not
       href: https://www.theincomparable.com/robot/
-  - name: Scripted
-    shows:
+    - name: Two Headed Girl
+      href: https://twoheadedgirl.transistor.fm/
     - name: 99% Invisible
       href: https://99percentinvisible.org/
+    - name: The Backmarkers
+      href: https://www.relay.fm/backmarkers
+  - name: Retired
+    shows:
+    - name: You Look Nice Today
+      href: https://www.youlooknicetoday.com/
+    - name: California King
+      href: https://www.californiaking.org/
     - name: The Anthropocene Reviewed
       href: https://www.wnycstudios.org/podcasts/anthropocene-reviewed
-  - name: Limited Run
-    shows:
     - name: Playing for Fun
       href: https://www.relay.fm/playingforfun
-    - name: Ben, Ben, and Blue
+    - name: Ben, Ben and Blue
       href: https://www.stitcher.com/show/ben-ben-and-blue
     - name: The 3b1b podcast
       href: https://www.3blue1brown.com/podcast
     - name: Neutral
       href: https://neutral.fm/
-
-
 ---
 # Podcasts I Like
 
