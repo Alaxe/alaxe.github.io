@@ -71,6 +71,9 @@
     semester: ASE
 - category: "Humanities, Arts, and Social Sciences"
   classes:
+  - number: "21M.301"
+    name: Harmony and Counterpoint I
+    semester: Fall 2023
   - number: "21M.051"
     name: Fundamentals of Music
     semester: Spring 2022
