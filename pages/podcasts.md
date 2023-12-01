@@ -26,8 +26,6 @@ podcasts:
       href: https://www.theincomparable.com/robot/
     - name: Two Headed Girl
       href: https://twoheadedgirl.transistor.fm/
-    - name: 99% Invisible
-      href: https://99percentinvisible.org/
     - name: The Backmarkers
       href: https://www.relay.fm/backmarkers
   - name: Retired
@@ -46,6 +44,8 @@ podcasts:
       href: https://www.3blue1brown.com/podcast
     - name: Neutral
       href: https://neutral.fm/
+    - name: Top Scallops
+      href: https://topscallops.simplecast.com/
 ---
 # Podcasts I Like
 
