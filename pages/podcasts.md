@@ -22,6 +22,8 @@ podcasts:
     shows:
     - name: Cortex
       href: https://www.relay.fm/cortex
+    - name: The Adventure Zone
+      href: https://maximumfun.org/podcasts/adventure-zone/
     - name: Robot or Not
       href: https://www.theincomparable.com/robot/
     - name: Two Headed Girl
