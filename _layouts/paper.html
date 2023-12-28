@@ -1,32 +1,32 @@
 ---
-layout: main_toggle
 ---
-<hgroup>
-  <h5> {{ page.full_title }} </h5>
-  <h6>
-    {% for a in page.authors %}
-      {% assign a_name = a %}
-      {% assign sep = ',' %}
+<section>
+  <hgroup>
+    {% include anchor-heading anchor=page.title title=page.full_title %}
+    <h3>
+      {% for a in page.authors %}
+        {% if a == "Aleksandar Krastev" -%}
+          <strong>{{ a }}</strong>
+        {%- else -%}
+          {{ a }}
+        {%- endif -%}
+        {%- unless forloop.last -%}
+          ,
+        {% endunless %}
+      {% endfor %}
+    </h3>
+  </hgroup>
 
-      {% if a == "Aleksandar Krastev" %}
-        {% capture a_name %}<strong>{{ a }}</strong>{% endcapture %}
-      {% endif %}
+  {{ content }}
 
-      {% if forloop.last %}
-        {% assign sep = '' %}
-      {% endif %}
+  <footer>
+    {% include links links=page.links -%}
 
-      {{ a_name }}{{ sep }}
-    {% endfor %}
-  </h6>
-</hgroup>
-{{ content }}
-<footer>
-  {% include links links=page.links %}
-
-  {% if page.equal_contribution %}
-    <small style="float: right;">
-      *Equal contribution
-    </small>
-  {% endif %}
-</footer>
+    {% if page.equal_contribution %}
+      <small style="float: right;">
+        *Equal contribution
+      </small>
+    {% endif %}
+  </footer>
+  <hr/>
+</section>

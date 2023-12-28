@@ -1,13 +1,12 @@
 ---
-layout: side_project
 title: Nitwit
 links:
-  - text: Code
+  - title: Code
     icon: github
-    href: https://github.com/Alaxe/nitwit
-  - text: Docs
+    url: https://github.com/Alaxe/nitwit
+  - title: Docs
     icon: book
-    href: https://github.com/Alaxe/nitwit/blob/master/docs/spec.md
+    url: https://github.com/Alaxe/nitwit/blob/master/docs/spec.md
 ---
 A programming language that uses [prefix notation] for amusement
 purposes: for example, `a = (b + c) * d` looks like `= a * + b c d`.

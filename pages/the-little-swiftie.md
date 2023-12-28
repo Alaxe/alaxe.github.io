@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /the-little-swiftie/
+permalink: /:basename/
 ---
 # The Little Swiftie
 

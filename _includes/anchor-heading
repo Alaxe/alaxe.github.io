@@ -1,0 +1,12 @@
+{% capture anchor -%}
+    {{include.anchor | default: include.title | downcase }}
+{%- endcapture -%}
+{% capture h -%}
+  h{{ include.level | default: 2 }}
+{%- endcapture %}
+<{{h}} id="{{anchor}}" >
+  <a href="#{{anchor}}" class="title">
+    {{ include.title }}
+  </a>
+</{{h}}>
+

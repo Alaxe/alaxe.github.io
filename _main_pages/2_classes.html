@@ -1,0 +1,46 @@
+---
+layout: page
+title: Classes
+permalink: /classes/
+now: IAP 2023
+---
+<h1> Classes I've Taken </h1>
+
+{% for cat in site.data.classes %}
+<section>
+  {% include anchor-heading title=cat.category %}
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Term</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for cl in cat.classes %}
+        <tr>
+          <td class="course">
+            {{ cl.number }}
+            {% if cl.old_number %}
+              <sub>
+                [{{ cl.old_number }}]
+              </sub>
+            {% endif %}
+          </td>
+          <td>{{ cl.name }}</td>
+          <td class="course">
+            {% if cl.semester == "ASE" %}
+              <span data-tooltip="Advanced Standing Exam">ASE</span>
+            {% elsif cl.semester == page.now %}
+              <em>{{ cl.semester }}</em>
+            {% else %}
+              {{ cl.semester }}
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endfor %}

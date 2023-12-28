@@ -1,13 +1,12 @@
 ---
-layout: side_project
 title: Retroactive Priority Queue
 links:
-  - text: Code
+  - title: Code
     icon: github
-    href: https://github.com/6851-2021/retroactive-priority-queue
-  - text: Original Paper
+    url: https://github.com/6851-2021/retroactive-priority-queue
+  - title: Original Paper
     icon: file-pdf
-    href: http://erikdemaine.org/papers/Retroactive_TALG/paper.pdf
+    url: http://erikdemaine.org/papers/Retroactive_TALG/paper.pdf
 ---
 A priority queue that supports adding and removing updates (`insert` and
 `delete_min`) on past versions of the data structure.

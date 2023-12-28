@@ -1,7 +1,7 @@
+<ul class="links">
 {% for l in include.links %}
-  {% include ilink href=l.href icon=l.icon text=l.text %}
-  {% unless forloop.last %}
-    |
-  {% endunless %}
+  <li>
+    {% include ilink url=l.url icon=l.icon title=l.title %}
+  </li>
 {% endfor %}
-
+</ul>

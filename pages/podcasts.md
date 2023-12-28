@@ -1,6 +1,7 @@
 ---
 layout: default
-permalink: /podcasts/
+permalink: /:basename/
+title: Podcasts
 podcasts:
   - name: Good Starting Points
     shows:
@@ -52,7 +53,7 @@ podcasts:
 # Podcasts I Like
 
 {% for c in page.podcasts %}
-  **{{ c.name }}**
+  {% include anchor-heading title=c.name level=3 %}
   <ul>
   {% for p in c.shows %}
     <li><a href="{{ p.href }}">{{ p.name }}</a></li>
