@@ -1,7 +1,5 @@
 <ul class="links">
 {% for l in include.links %}
-  <li>
-    {% include ilink url=l.url icon=l.icon title=l.title %}
-  </li>
+  {% include ilink url=l.url icon=l.icon title=l.title %}
 {% endfor %}
 </ul>

@@ -1,0 +1,19 @@
+{% capture assets_base %}/assets/music/{{page.slug}}{% endcapture %}
+{% capture audio_url %}{{assets_base}}.mp3{% endcapture %}
+{% capture score_url %}{{assets_base}}.pdf{% endcapture %}
+
+<section>
+  {% include anchor-heading title=page.title anchor=page.slug %}
+  <audio controls>
+    <source src="{{audio_url}}"/>
+  </audio>
+
+  {{ content }}
+
+  <ul class="links">
+    {% include ilink title="Sheet Music" icon="file-pdf" url=score_url %}
+    {% include ilink title="Audio" icon="music" url=audio_url %}
+  </ul>
+  <hr/>
+</section>
+

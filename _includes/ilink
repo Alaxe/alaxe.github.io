@@ -5,14 +5,16 @@
     {% assign icon_type = "solid" %}
 {% endcase %}
 
-<a href="{{ include.url | default: "#" }}">
-  {%- if include.icon -%}
-  <span class="icon">
-    <i class="
-      fa-{{ icon_type }}
-      fa-{{ include.icon }}
-    "></i>
-  </span>
-  {%- endif -%}
-  {{- include.title -}}
-</a>
+<li>
+  <a href="{{ include.url | default: "#" }}">
+    {%- if include.icon -%}
+    <span class="icon">
+      <i class="
+        fa-{{ icon_type }}
+        fa-{{ include.icon }}
+      "></i>
+    </span>
+    {%- endif -%}
+    {{- include.title -}}
+  </a>
+</li>

@@ -28,6 +28,7 @@ author_name: "Aleksandar Krastev"
 collections:
   papers:
   side_projects:
+  music:
   main_pages:
     output: true
 
