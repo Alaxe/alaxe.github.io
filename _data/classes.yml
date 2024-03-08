@@ -1,5 +1,9 @@
 - category: "Advanced Computer Science"
   classes:
+  - number: "6.7720"
+    old_number: "6.265"
+    name: Discrete Probability and Stochastic Processes
+    semester: Spring 2024
   - number: "6.5120"
     old_number: "6.822"
     name: Formal Reasoning About Programs
