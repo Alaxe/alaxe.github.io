@@ -15,6 +15,8 @@ podcasts:
       href: https://atp.fm/555
     - name: Reconcilable Differences
       href: https://www.relay.fm/rd/102
+    - name: The Adventure Zone
+      href: https://maximumfun.org/episodes/adventure-zone/the-adventure-zone-presents-the-ballad-of-bigfoot-an-amnesty-story/
     - name: The Unmade Podcast
       href: https://www.unmade.fm/episodes/episode107
     - name: Do By Friday
