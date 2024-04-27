@@ -9,7 +9,9 @@
       {%- endif %}
       alexalex
     </title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -37,6 +39,11 @@ td.course:nth-child(3) {
 
 section {
   margin-bottom: var(--spacing);
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -77,15 +84,18 @@ h3 {
 }
 
 
-a:is(:link, :visited, :hover, :active).nav-title {
-  --color: var(--h1-color);
+a.nav-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-a:is(:link, :visited, :hover, :active).title {
-  --color: inherit;
+a:link, a:visited {
+  text-decoration: none;
 }
+a:hover, a:active {
+  text-decoration: underline;
+}
+
 
 audio {
   display: block;

@@ -5,7 +5,7 @@
   h{{ include.level | default: 2 }}
 {%- endcapture %}
 <{{h}} id="{{anchor}}" >
-  <a href="#{{anchor}}" class="title">
+  <a href="#{{anchor}}" class="contrast">
     {{ include.title }}
   </a>
 </{{h}}>
