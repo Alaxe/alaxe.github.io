@@ -1,4 +1,4 @@
-- category: "Advanced Computer Science"
+- category: "Grad Computer Science"
   classes:
   - number: "6.7720"
     old_number: "6.265"
@@ -8,10 +8,6 @@
     old_number: "6.822"
     name: Formal Reasoning About Programs
     semester: Spring 2023
-  - number: "6.1810"
-    old_number: "6.039"
-    name: Operating System Engineering
-    semester: Fall 2022
   - number: "6.S983"
     old_number: "6.888"
     name: Secure Hardware Design
@@ -36,8 +32,12 @@
     old_number: "6.890"
     name: Matrix Multiplication and Graph Algorithms
     semester: Spring 2020
-- category: "Base Computer Science"
+- category: "Undergrad Computer Science"
   classes:
+  - number: "6.1810"
+    old_number: "6.039"
+    name: Operating System Engineering
+    semester: Fall 2022
   - number: "6.1810"
     old_number: "6.033"
     name: Computer Systems Engineering
