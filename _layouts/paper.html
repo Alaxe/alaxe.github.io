@@ -5,7 +5,7 @@
     {% include anchor-heading anchor=page.title title=page.full_title %}
     <h3>
       {% for a in page.authors %}
-        {% if a == "Aleksandar Krastev" -%}
+        {% if a contains "Aleksandar Krastev" -%}
           <strong>{{ a }}</strong>
         {%- else -%}
           {{ a }}

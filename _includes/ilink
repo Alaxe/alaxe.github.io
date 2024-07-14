@@ -1,5 +1,5 @@
 {% case include.icon %}
-  {% when "github" %}
+  {% when "github", "youtube" %}
     {% assign icon_type = "brands" %}
   {% else %}
     {% assign icon_type = "solid" %}

@@ -5,7 +5,6 @@ date: 2022-06-01
 full_title: >
   CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on
   Encrypted Data
-pdf: https://dl.acm.org/doi/pdf/10.1145/3470496.3527393
 authors:
   - Nikola Samardzic
   - Axel Feldmann
@@ -21,7 +20,7 @@ links:
     icon: file-pdf
     url: https://dl.acm.org/doi/pdf/10.1145/3470496.3527393
 ---
-CraterLake is the state-of-the-art hardware accelerator for FHE, providing
+CraterLake is a state-of-the-art hardware accelerator for FHE, providing
 speedups of 5,000× over CPU on a broad range of applications.
 Building upon F1's functional units, CraterLake introduces a novel architecture
 that significantly reduces on- and off-chip data movement.
