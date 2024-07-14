@@ -15,8 +15,7 @@ links:
 # Hello There!
 
 I'm a first-year PhD student doing computer architecture research with Professor [Daniel Sanchez][daniel] at MIT.
-Besides that, I currently enjoy listening to [podcasts], [tinkering][linux] with Linux, and, yes, obsessing over
-<span title="And though I can't recall your face&#010;I still got love for you">Taylor Swift</span>.
+Besides that, I currently enjoy listening to [podcasts], [tinkering][linux] with Linux, and most recently, watching Formula 1.
 
 [daniel]: https://people.csail.mit.edu/sanchez/
 [podcasts]: /podcasts
