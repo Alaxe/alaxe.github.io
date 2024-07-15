@@ -17,6 +17,9 @@ links:
   - title: Paper
     icon: file-pdf
     url: https://dl.acm.org/doi/pdf/10.1145/3656382
+  - title: Code
+    icon: github
+    url: https://github.com/fhelipe-compiler/fhelipe
   - title: Talk
     icon: youtube
     url: https://www.youtube.com/live/CV2I0Ioyx7s?t=20880
