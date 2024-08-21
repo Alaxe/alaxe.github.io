@@ -14,7 +14,7 @@ links:
 ---
 # Hello There!
 
-I'm a first-year PhD student doing computer architecture research with Professor [Daniel Sanchez][daniel] at MIT.
+I'm a PhD student doing computer architecture research with Professor [Daniel Sanchez][daniel] at MIT.
 Besides that, I currently enjoy listening to [podcasts], [tinkering][linux] with Linux, and most recently, watching Formula 1.
 
 [daniel]: https://people.csail.mit.edu/sanchez/
