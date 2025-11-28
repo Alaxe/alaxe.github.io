@@ -3,36 +3,147 @@ layout: barebones
 ---
 <script>
 const verses = [
-`Where the North wind meets the sea
-There's a river full of memory
-Sleep, my darling, safe and sound
-For in this river, all is found`,
-
-`In her waters, deep and true
-Lie the answers and a path for you
-Dive down deep into her sound
-But not too far or you'll be drowned`,
-
-`Yes, she will sing to those who'll hear
-And in her song, all magic flows
-But can you brave what you most fear?
-Can you face what the river knows?`,
-
-`Where the North wind meets the sea
-There's a mother full of memory
-Come, my darling, homeward bound
-When all is lost, then all is found`,
+  [
+    {
+      body:
+`Hold your head up, you silly girl
+Look what you've done
+When you find yourself in the thick of it
+Help yourself to a bit of what is all around you
+Silly girl`,
+      title: "Martha My Dear",
+      artist: "The Beatles",
+    }, {
+      body:
+`You get away with murder so innocent
+But when you throw a moody
+You're all claws and you bite
+That's alright!`,
+      title: "Delilah",
+      artist: "Queen",
+    }
+  ], [
+    {
+      body:
+`Getting to the top
+Wasn't supposed to be this hard
+The house is on Mulholland Drive
+The car's on Sunset Boulevard`,
+      title: "How Long?",
+      artist: "Vampire Weekend",
+    }, {
+      body:
+`If I ever want to fly
+Mulholland Drive
+I am alive`,
+      title: "Electrolite",
+      artist: "R.E.M.",
+    },
+  ], [
+    {
+      body:
+`You know I love a London boy
+I enjoy nights in Brixton, Shoreditch in the afternoon
+He likes my American smile, like a child when our eyes meet
+Darling, I fancy you`,
+      title: "London Boy",
+      artist: "Taylor Swift",
+    }, {
+      body:
+`And, no, I ain't been to MIA
+I heard that Cali never rains and New York's wide awake
+First let's see the West End, I'll show you to my bredrin
+I'm likin' this American boy, American boy`,
+      title: "American Boy",
+      artist: "Estelle ft. Kanye West",
+    },
+  ], [
+    {
+      body:
+`Hands in the air
+Nobody needs to get hurt
+She is my lady in gold
+And we'll go all the way, all the way`,
+      title: "Getaway",
+      artist: "Saint Motel",
+    }, {
+      body:
+`Ridin' in a getaway car
+There were sirens in the beat of your heart
+Shoulda known I'd be the first to leave
+Think about the place where you first met me`,
+      title: "Getaway Car",
+      artist: "Taylor Swift",
+    },
+  ], [
+    {
+      body:
+`'Cause they got the cages, they got the boxes
+And guns
+They are the hunters, we are the foxes
+And we run`,
+      title: "I Know Places",
+      artist: "Taylor Swift",
+    }, {
+      body:
+`They chased us through brambles
+They chased us through fields
+They'd chased us forever
+But the heart would not yield`,
+      title: "The End of the Game",
+      artist: "Sting",
+    },
+  ], [
+    {
+      body:
+`Your day breaks, your mind aches
+You find that all her words
+Of kindness linger on
+When she no longer needs you`,
+      title: "For No One",
+      artist: "The Beatles",
+    }, {
+      body:
+`Day breaks and every morning
+When he wakes he thinks of you`,
+      title: "In The Lost And Found",
+      artist: "Elliott Smith",
+    },
+  ], [
+    {
+      body:
+`Christ, I'm a sidewinder, I'm a California King
+I swear it's everywhere, oh, it's everything`,
+      title: "Parallel Universe",
+      artist: "Red Hot Chilli Peppers",
+    }, {
+      body:
+`If I don't pick up, hang up, call back, let it ring some more
+If I don't pick up, pick up
+The sidewinder sleeps, sleeps, sleeps in a coil`,
+      title: "The Sidewinder Sleeps Tonite",
+      artist: "R.E.M.",
+    },
+  ],
 ];
-const storageKey = "404.verseIndex";
 
-let verseIndex = parseInt(localStorage.getItem(storageKey)) || 0;
-if (verseIndex >= verses.length || verseIndex < 0) {
-  verseIndex = 0;
+function renderVerse(verse) {
+  let body = verse.body.replace(/\n/g, "</br>");
+  return (
+`<blockquote>
+  ${verse.body.replace(/\n/g, "</br>")}
+  <footer>
+    <cite>
+      &ldquo;${verse.title}&rdquo; &mdash; ${verse.artist}
+    </cite>
+  </footer>
+</blockquote>`);
 }
 
-const currentVerse = verses[verseIndex];
-const main = document.getElementsByTagName("main")[0];
-main.innerHTML = currentVerse.replace(/\n/g, "<br>");
+let pairIndex = Math.floor(Math.random() * verses.length)
+let pair = verses[pairIndex];
+let rendered = pair.map(renderVerse).join("\n");
 
-localStorage.setItem(storageKey, (verseIndex + 1) % verses.length);
+const main = document.getElementsByTagName("main")[0];
+main.innerHTML = rendered;
 </script>
