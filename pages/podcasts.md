@@ -3,40 +3,46 @@ layout: default
 permalink: /:basename/
 title: Podcasts
 podcasts:
-  - name: Good Starting Points
+  - name: Currently Listening To
     shows:
-    - name: Hello Internet
-      href: https://www.hellointernet.fm/66
-    - name: Dear Hank and John
-      href: https://complexly.com/shows/dear-hank-john
-  - name: High-Volume
-    shows:
+    - name: The Rest Is History
+      href: https://podcasts.apple.com/us/podcast/horror-in-the-congo-the-nightmare-begins-part-1/id1537788786?i=1000686713021
     - name: Accidental Tech Podcast
       href: https://atp.fm/555
+    - name: The Race F1 Podcast
+      href: https://shows.acast.com/the-race-f1-podcast
+    - name: Bring Back V10s
+      href: https://shows.acast.com/bring-back-v10s-classic-f1-stories/episodes/s12-e2-japan-1990-senna-and-prost-clash-again
     - name: The Adventure Zone
       href: https://maximumfun.org/episodes/adventure-zone/the-adventure-zone-presents-the-ballad-of-bigfoot-an-amnesty-story/
     - name: Reconcilable Differences
       href: https://www.relay.fm/rd/102
-    - name: Do By Friday
-      href: https://dobyfriday.com/episodes/324
-  - name: Low-Volume
-    shows:
-    - name: Cortex
-      href: https://www.relay.fm/cortex/91
     - name: The Unmade Podcast
       href: https://www.unmade.fm/episodes/episode107
+    - name: The Glacial Podcast
+      href: https://www.unmade.fm/glacial
+    - name: Dear Hank and John
+      href: https://complexly.com/shows/dear-hank-john
     - name: Robot or Not
       href: https://www.theincomparable.com/robot/142
-    - name: The Backmarkers
-      href: https://www.relay.fm/backmarkers
-  - name: Retired
+    - name: Cortex
+      href: https://www.relay.fm/cortex/91
+  - name: Previously Enjoyed
     shows:
+    - name: Hello Internet
+      href: https://www.hellointernet.fm/66
+    - name: Do By Friday
+      href: https://dobyfriday.com/episodes/324
+    - name: Top Scallops
+      href: https://topscallops.simplecast.com/
     - name: Two Headed Girl
       href: https://twoheadedgirl.transistor.fm/7
     - name: You Look Nice Today
       href: https://www.youlooknicetoday.com/
     - name: California King
       href: https://www.californiaking.org/
+    - name: The Backmarkers
+      href: https://www.relay.fm/backmarkers
     - name: The Anthropocene Reviewed
       href: https://www.wnycstudios.org/podcasts/anthropocene-reviewed/episodes/anthropocene-reviewed-hall-presidents-and-new-partner
     - name: Playing for Fun
@@ -47,9 +53,8 @@ podcasts:
       href: https://www.3blue1brown.com/podcast
     - name: Neutral
       href: https://neutral.fm/
-    - name: Top Scallops
-      href: https://topscallops.simplecast.com/
 ---
+
 # Podcasts I Like
 
 {% for c in page.podcasts %}
