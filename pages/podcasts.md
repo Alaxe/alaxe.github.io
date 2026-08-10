@@ -6,7 +6,7 @@ podcasts:
   - name: Currently Listening To
     shows:
     - name: The Rest Is History
-      href: https://podcasts.apple.com/us/podcast/horror-in-the-congo-the-nightmare-begins-part-1/id1537788786?i=1000686713021
+      href: https://therestishistory.com/episodes/the-nightmare-begins-part-1
     - name: Accidental Tech Podcast
       href: https://atp.fm/555
     - name: The Race F1 Podcast
@@ -25,12 +25,12 @@ podcasts:
       href: https://complexly.com/shows/dear-hank-john
     - name: Robot or Not
       href: https://www.theincomparable.com/robot/142
-    - name: Cortex
-      href: https://www.relay.fm/cortex/91
   - name: Previously Enjoyed
     shows:
     - name: Hello Internet
       href: https://www.hellointernet.fm/66
+    - name: Cortex
+      href: https://www.relay.fm/cortex/91
     - name: Do By Friday
       href: https://dobyfriday.com/episodes/324
     - name: Top Scallops
