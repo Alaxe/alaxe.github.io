@@ -4,10 +4,8 @@ title: Music
 permalink: /music/
 ---
 # Music
-As I took some music classes at MIT, I ended up composing a couple of short pieces.
-Here are the ones that turned out okay.
-
-Most recordings are computer-generated.
+I wrote a few short pieces for classes in college.
+Here are the ones I'm happy with:
 
 {% for music in site.music %}
   {{ music.output }}
