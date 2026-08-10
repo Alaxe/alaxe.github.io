@@ -14,12 +14,15 @@ links:
 ---
 # Hello There!
 
-I'm <span id="a">a</span> PhD student doing computer architecture research with Professor [Daniel Sanchez][daniel] at MIT.
-Besides that, I currently enjoy listening to [podcasts], [tinkering][linux] with Linux, and most recently, watching Formula 1.
+I'm <span id="a">a</span> PhD student doing research in computer architecture and programming languages.
+I work with Professor [Daniel Sanchez][Daniel].
+
+Besides that, I enjoy listening to [podcasts], [tinkering][Linux] with Linux, and most recently, fixing up an [80's Schwinn Le Tour][Schwinn].
 
 [daniel]: https://people.csail.mit.edu/sanchez/
 [podcasts]: /podcasts
 [linux]: https://github.com/Alaxe/configs
+[schwinn]: /assets/schwinn.jpg
 
 {% include links links=page.links%}
 
